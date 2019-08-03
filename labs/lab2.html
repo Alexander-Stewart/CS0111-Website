@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#lab-2-animations">Lab 2: Animations</a>
+<ul>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#part-1">Part 1</a></li>
+<li><a href="#part-2">Part 2</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="lab-2-animations">Lab 2: Animations</h1>
+<p>Eli is evicting you and your crew from Mars! You received a transmission from Heila that you can come stay with her on Venus. You have to navigate there and land as fast as you can!</p>
+<h2 id="setup">Setup</h2>
+<p>Include this at the top of your program:</p>
+<pre><code>
+include reactors
+
+include image
+
+  
+
+data Posn:
+
+| posn(x :: Number, y :: Number)
+
+end
+
+</code></pre>
+<p>A <code>posn</code> is a datatype that probably looks familiar: it is a way to represent coordinates on a grid by using <code>x</code> and <code>y</code> values.</p>
+<p>To create a new <code>posn</code> with an x-value of 3 and a y-value of 4:</p>
+<p><code>my-posn = posn(3,4)</code></p>
+<p>To access the x- and y-values of <code>my-posn</code>:</p>
+<pre><code>
+&gt;&gt;&gt;my-posn.x
+
+3
+
+&gt;&gt;&gt;my-posn.y
+
+4
+
+</code></pre>
+<p>Try this out in the interactions window! What kind of values can you use for <code>x</code> and <code>y</code>? What happens if you try to add a <code>z</code> coordinate?</p>
+<h2 id="part-1">Part 1</h2>
+<h3 id="building-the-view">1.1: Building the view</h3>
+<p>The first thing you need in order to launch your ship is a night sky and a ship to launch.</p>
+<p>Write a function <code>outer-space</code> that creates a square black background and place your rocketship and Venus somewhere on it. They should be on opposite ends of the screen.</p>
+<p>You might notice that this function does not have any inputs (something that also came up on homework 2). When might it be useful to write a function without any inputs?</p>
+<p>Pyret has a useful function <code>image-url</code> for loading images when you don’t want to build an entire graphic from scratch. <code>image-url</code> takes in the url of an picture from the web and outputs it as a Pyret Image. Once it’s loaded, you can manipulate it the way you would any other Image from the <a href="https://www.pyret.org/docs/latest/image.html"><code>image</code></a> library.</p>
+<p>We used these images:</p>
+<pre><code>
+SPACESHIP-URL = "https://cdn.pixabay.com/photo/2018/01/25/19/16/ufo-3106867_960_720.png"
+
+VENUS-URL = "http://icons.iconarchive.com/icons/zairaam/bumpy-planets/256/03-venus-icon.png"
+
+  
+
+spaceship-image = image-url(SPACESHIP-URL)
+
+venus-image = image-url(VENUS-URL)
+
+</code></pre>
+<p>But you’re welcome to find (or build) your own!</p>
+<p><strong>Hint:</strong> You might find the function <a href="https://www.pyret.org/docs/latest/image.html#%28part._image_place-image%29"><code>place-image</code></a> more useful than <code>overlay-image</code>, as it allows you to fix one image and put another somewhere on it.</p>
+<p><strong>Note:</strong> You must use a <code>posn</code> to store the positions of your spaceship and of Venus.</p>
+<h3 id="random-launch">1.2: Random launch</h3>
+<p>Eli is getting impatient with your slow departure and has decided to randomly launch your ship!</p>
+<p>Use <a href="https://www.pyret.org/docs/latest/numbers.html#%28part._numbers_num-random%29"><code>num-random(n)</code></a> to change your function so that your spaceship is placed at a random spot on your background.</p>
+<hr>
+<h3 id="checkpoint-call-over-a-ta-once-you-reach-this-point."><em>CHECKPOINT:</em> Call over a TA once you reach this point.</h3>
+<hr>
+<h2 id="part-2">Part 2</h2>
+<h3 id="adding-movement">2.1: Adding movement</h3>
+<p>Now it’s time to actually launch your ship! To do so, you will be using a Pyret <code>reactor</code>, which we talked about in the presentation.</p>
+<p>Here is a basic example for reference:</p>
+<pre><code>
+my-reactor =
+
+reactor:
+
+init: init-posn
+
+to-draw: outer-space
+
+on-tick: lift-off
+
+end
+
+</code></pre>
+<p>Change your code from <strong>Problem 1</strong> so that your image is drawn as part of a <code>reactor</code>. To do this, you must create two functions:</p>
+<ul>
+<li>
+<p>Modify your <code>outer-space</code> function so that it takes a <code>posn</code> as input and returns an image</p>
+</li>
+<li>
+<p>Write a new function, <code>lift-off</code>, that takes a <code>posn</code> as input and moves it forward by 1.</p>
+</li>
+</ul>
+<p>To use your reactor, run your program and type <code>interact(my-reactor)</code> in the interactions window.</p>
+<hr>
+<h3 id="checkpoint-call-over-a-ta-once-you-reach-this-point.-1"><em>CHECKPOINT:</em> Call over a TA once you reach this point.</h3>
+<hr>
+<h3 id="navigate-your-ship">2.1: Navigate your ship</h3>
+<p>If you can’t steer your ship, how will you get to Venus?</p>
+<p>So far, our reactor uses lift-off to move the rocket every few milliseconds. In a game, however, we also want to move the rocket as a player presses keys. Brainstorm which keys would you like to use and how the <code>posn</code> of a rocket change based on which key was pressed. Pick only two keys to start (you can add more later).</p>
+<p>Write a function <code>move-ship</code> that takes in a <code>posn</code> and a string and returns a new <code>posn</code>. The string represents a keypress, the input posn represents the initial position of an object, and the output posn represents the object’s new position after the keypress.</p>
+<p>Below is a list of some string to key mappings:</p>
+<ul>
+<li>
+<p>Enter key: “enter”</p>
+</li>
+<li>
+<p>Left arrow: “left”</p>
+</li>
+<li>
+<p>Up arrow: “up”</p>
+</li>
+<li>
+<p>Right arrow: “right”</p>
+</li>
+<li>
+<p>Down arrow: “down”</p>
+</li>
+<li>
+<p>Backspace key: “backspace”</p>
+</li>
+</ul>
+<p>You can also use each key’s literal character to represent that key. For example, “a” is the a key, “b” is the b key, etc.</p>
+<p>Add the <code>move-ship</code> function to your reactor like this:</p>
+<pre><code>
+my-reactor =
+
+reactor:
+
+init: init-posn
+
+to-draw: outer-space
+
+on-tick: lift-off
+
+on-key: move-ship
+
+end
+
+</code></pre>
+<hr>
+<h3 id="checkpoint-call-over-a-ta-once-you-reach-this-point.-2"><em>CHECKPOINT:</em> Call over a TA once you reach this point.</h3>
+<hr>
+<h3 id="additional-features">2.2: Additional features</h3>
+<p>Pick and choose which feature you want to try to implement, or come up with your own!</p>
+<p><strong>Collisions:</strong></p>
+<p>Write a function <code>collision</code> that takes in the position of the spaceship and returns a Boolean indicating whether the spaceship has landed on Venus.</p>
+<p>Add it to your reactor like this:</p>
+<pre><code>
+my-reactor =
+
+reactor:
+
+init: init-posn
+
+to-draw: outer-space
+
+on-tick: lift-off
+
+on-key: move-ship
+
+stop-when: collision
+
+end
+
+</code></pre>
+<p>Next, congratulate your captain for a successful landing by modifying <code>to-draw</code> so that if there is a <code>collision</code>, the image becomes a “Congratulations!” graphic.</p>
+<p><strong>Wrap-around:</strong></p>
+<p>What happens if the spaceship misses Venus and flies off the screen? (Try this out using your current reactor).</p>
+<p>Modify your <code>on-tick</code> function so that if the spaceship flies off the screen, it wraps around on the other side.</p>
+
+    </div>
+  </div>
+</body>
+
+</html>

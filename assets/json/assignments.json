@@ -1,0 +1,102 @@
+[
+    {
+	"Week": "0",
+	"Assignment": { "name": "Surveys and Signups", "link": null },
+	"Type": "---",
+	"Out": "Sept 5",
+	"In": "Sept 9",
+	"Display": true,
+	"Support Docs": [{ "name": "Background Survey", "link": "https://docs.google.com/forms/d/e/1FAIpQLSeKAJdReTva2JP3JxR0HnxeKfuOL_B8um7gj8GZE-0aTIFFuw/viewform?usp=sf_link"},
+			 { "name": "Piazza Signup", "link": "https://piazza.com/brown/fall2018/fall2018csci0111s01"  },
+			 { "name": "Data Thinking Survey", "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520076"},
+             { "name": "Lab Signup", "link": "https://goo.gl/forms/o8Uihog027V91cur2" },
+             { "name": "Collaboration and Policies Contract", "link": "https://goo.gl/forms/uxVoQhwXknPuzJUu1" }],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "1",
+	"Assignment": { "name": "Flags", "link": "https://cs.brown.edu/courses/csci0111/homeworks/Homework-1.html" },
+	"Type": "---",
+	"Out": "Sept 7",
+	"In": "Sept 11 (9pm)",
+	"Display": true,
+	"Support Docs": [],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "2",
+	"Assignment": { "name": "Leaving Earth", "link": "homeworks/Homework-2.html" },
+	"Type": "---",
+	"Out": "Sept 12",
+	"In": "Sept 18 (9pm)",
+	"Display": true,
+	"Support Docs": [],
+	"Solutions": { "name": "---", "link": null }
+    }, {
+	"Week": "3",
+	"Assignment": { "name": "Vacation to Venus", "link": "homeworks/Homework-3.html" },
+	"Type": "---",
+	"Out": "Sept 19",
+	"In": "Sept 25 (9pm)",
+	"Display": true,
+	"Support Docs": [],
+	"Solutions": { "name": "---", "link": null }
+    }, {
+	"Week": "4",
+	"Assignment": { "name": "How the Tables Have Turned!", "link": "homeworks/Homework-4.html" },
+	"Type": "---",
+	"Out": "Sept 26",
+	"In": "Oct 2 (9pm)",
+	"Display": true,
+	"Support Docs": [],
+	"Solutions": { "name": "---", "link": null }
+    }, {
+	"Week": "5",
+	"Assignment": { "name": "Moneyball Readings", "link": "homeworks/Homework-5.html" },
+	"Type": "---",
+	"Out": "Oct 3",
+	"In": "Oct 9 (9pm)",
+	"Display": true,
+	"Support Docs": [],
+	"Solutions": { "name": "---", "link": null }
+    }, {
+	"Week": "6",
+	"Assignment": { "name": "Much Ado About Lists", "link": "homeworks/Homework-6.html" },
+	"Type": "---",
+	"Out": "Oct 17",
+	"In": "Oct 23 (9pm)",
+	"Display": true,
+	"Support Docs": [],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "7",
+	"Assignment": { "name": "Python Practice", "link": "homeworks/Homework-7.html" },
+	"Type": "---",
+	"Out": "Nov 7",
+	"In": "Nov 13 (9pm)",
+	"Display": true,
+	"Support Docs": [],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "8",
+	"Assignment": { "name": "Exploring the Changing Universe", "link": "homeworks/Homework-8.html" },
+	"Type": "---",
+	"Out": "Nov 14",
+	"In": "Nov 20 (9pm)",
+	"Display": true,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "9",
+	"Assignment": { "name": "Algorithmic Bias Readings", "link": "homeworks/Homework-9.html" },
+	"Type": "---",
+	"Out": "Nov 26",
+	"In": "Dec 4 (9pm)",
+	"Display": true,
+	"Support Docs": [],
+	"Solutions": { "name": "---", "link": null }
+    }
+]

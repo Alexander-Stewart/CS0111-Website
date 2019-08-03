@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 2</title>
+  <script
+  src="jquery.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+  	body {
+  		background-color: #f8f8f8;
+	}
+  </style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#homework-2-functions">Homework 2: Functions</a>
+<ul>
+<li><a href="#handin">Handin</a></li>
+<li><a href="#helpful--important-things">Helpful & Important Things</a></li>
+<li><a href="#bar-graph">Bar graph</a></li>
+<li><a href="#planet-pizza">Planet Pizza</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="homework-2-functions">Homework 2: Functions</h1>
+<h2 id="handin">Handin</h2>
+<p>Hand in your work at this <a href="https://goo.gl/forms/5IUmCl1fQkzMR5Sg1">Google Form</a> (<a href="https://goo.gl/forms/5IUmCl1fQkzMR5Sg1">https://goo.gl/forms/5IUmCl1fQkzMR5Sg1</a>).</p>
+<p>You should submit two files:</p>
+<ol>
+<li><code>graph.arr</code></li>
+<li><code>pizza.arr</code></li>
+</ol>
+<h2 id="helpful--important-things">Helpful &amp; Important Things</h2>
+<h3 id="test-cases">Test cases</h3>
+<p>All functions you write (whether functions we ask for or helper functions you decide to develop) need test cases.</p>
+<p>For functions that produce images, you should provide at least one example.</p>
+<p>Here is an example of testing functions:</p>
+<pre><code>fun my-square(x :: Number) -&gt; Number:
+  doc: "given a number, returns the square of that number"
+  x * x
+where:
+  my-square(3) is 9
+  my-square(0) is 0
+  my-square(-1) is 1
+end
+################################################################################
+fun my-img-square(len :: Number, color :: String) -&gt; Image:
+  doc: "given a side length and a color, produce a square with those properties"
+  square(len, "solid", color)
+end
+# my-img-square(20, "green") should produce a small green square.
+</code></pre>
+<h3 id="code-blocks">Code Blocks</h3>
+<p>You should be able to copy-paste code from this document into <a href="http://code.pyret.org">code.pyret.org</a> - don’t re-type everything!</p>
+<h3 id="comment-blocks">Comment Blocks</h3>
+<p>You can have a long comment that is several lines long by using a comment block:</p>
+<pre><code>#|
+long comment goes here
+make sure none of these lines go over 80 characters!
+|#
+</code></pre>
+<h3 id="documentation">Documentation</h3>
+<p><a href="https://www.pyret.org/docs/latest/">Pyret Documentation</a>, accessible from the Pirate button in the top left corner of <a href="http://code.pyret.org">code.pyret.org</a>.</p>
+<p>For this assignment, you will find the <a href="https://www.pyret.org/docs/latest/image.html">image documentation</a> useful.</p>
+<h3 id="what-we-will-look-for-when-grading">What we will look for when grading</h3>
+<ul>
+<li>When we ask you to write a function, we will give you the function name and what the inputs should be. If you do not follow this specification, you will be heavily deducted in your functionality and/or design grades (depending on the question and error).</li>
+<li>For question 3 of Bar Graph, your bar graph needs to look reasonable for large-ish inputs. Don’t worry about inputs over 300 or so.</li>
+</ul>
+<h2 id="bar-graph">Bar graph</h2>
+<h3 id="setup">Setup</h3>
+<ul>
+<li>Make a new file called <code>graph.arr</code>.</li>
+<li>Write your collaboration policy at the top in a comment:<br>
+<code># I collaborated with ...</code></li>
+<li>Do not put your name anywhere in the file.</li>
+</ul>
+<h3 id="the-question">The question</h3>
+<p>Here is a function that makes a bar graph with three bars.</p>
+<pre><code>fun bar-graph(num-a :: Number, num-b :: Number, num-c :: Number) -&gt; Image:
+  doc: ``` given three numbers, produces a bar graph with those heights
+       cannot take a number greater than 26 ```
+  underlay-xy(
+    underlay-xy(
+      underlay-xy(
+        rectangle(80, 80, "solid", "tan"),
+        8 + (0 * 25), 80 - (3 * num-a),
+        rectangle(15, 3 * num-a, "solid", "red")),
+      8 + (1 * 25), 80 - (3 * num-b),
+      rectangle(15, 3 * num-b, "solid", "blue")),
+    8 + (2 * 25), 80 - (3 * num-c),
+    rectangle(15, 3 * num-c, "solid", "green"))
+end
+</code></pre>
+<p>For example, <code>bar-graph(20, 15, 24)</code> produces this image:<br>
+<img src="https://puu.sh/BfzmM/6dec90e24f.png" alt="bar graph image"></p>
+<ol>
+<li>In a code block (see <a href="#code-blocks">Helpful Things</a>), explain the restriction of the input numbers to 26 pixels. It may be helpful to copy the code into <a href="code.pyret.org">CPO</a>.</li>
+<li>Write a function <code>bar-graph-clean</code> that cleans up <code>bar-graph</code> by introducing helper functions or constants where appropriate.<br>
+<strong>Note</strong>: <code>bar-graph-clean</code> should have the exact same functionality as <code>bar-graph</code>. If you run <code>bar-graph(20, 15, 24) == bar-graph-clean(20, 15, 24)</code>, it should produce the boolean <code>true</code>.<br>
+<strong>Note</strong>: We are not asking you to remove the <code>26</code> pixel restriction here.</li>
+<li>Write a function <code>bar-graph-general</code> that takes in three arguments (just like <code>bar-graph</code>) and produces a bar graph regardless of what those three numbers are. <code>bar-graph-general(50, 2, 120)</code> should run perfectly fine, for example.</li>
+</ol>
+<h2 id="planet-pizza">Planet Pizza</h2>
+<h3 id="setup-1">Setup</h3>
+<ul>
+<li>Make a new file called <code>pizza.arr</code>.</li>
+<li>Write your collaboration policy at the top in a comment:<br>
+<code># I collaborated with ...</code></li>
+<li>Do not put your name anywhere in the file.</li>
+</ul>
+<h3 id="the-question-1">The question</h3>
+<p>Here is a function that computes the cost of a pizza based on a single topping and whether or not the pizza was delivered.</p>
+<pre><code>fun order-cost-orig(topping :: String, delivered :: Boolean) -&gt; Number:
+  doc: ``` Adds a 15% tax to the cost of a pizza based on one topping,
+  adding a (untaxed) delivery cost if appropriate ```
+  if topping == "onion":
+    if delivered:
+      12.50 + (12.50 * 0.15) + 3
+    else:
+      12.50 + (12.50 * 0.15)
+    end
+  else if topping == "pepperoni":
+    if delivered:
+      14 + (14 * 0.15) + 3
+    else:
+      14 + (14 * 0.15)
+    end
+  else if topping == "none":
+    if delivered:
+      11 + (11 * 0.15) + 3
+    else:
+      11 + (11 * 0.15)
+    end
+  end
+end
+</code></pre>
+<ol>
+<li>
+<p>In a code block, list a few of the limitations of this function. Discuss its structure and clarity, as well as any functionality drawbacks there may be.<br>
+In addition, discuss how the function would need to change if a drink was also being bought. Would it be simple or complicated to incorporate, and why?<br>
+Your answer should look like this:</p>
+<pre><code>#|
+- One disadvantage is that ...
+- ...
+- Adding a drink cost would be ...
+|#
+</code></pre>
+</li>
+<li>
+<p><strong>Writing a cleaner version of <code>order-cost-orig</code></strong><br>
+Using helper functions and constants where appropriate, write a function <code>order-cost</code> that takes in a topping string (either “onion” or “pepperoni”) and a delivery boolean, and computes the price of the pizza.<br>
+<strong>Note:</strong> The functionality of <code>order-cost</code> should not change. <code>order-cost</code> and <code>order-cost-orig</code> should do the same thing with the same inputs.<br>
+<strong>Note:</strong> This question is asking only for improvement on the design of <code>order-cost</code>, not any functionality limitations you may have discussed in question 1.</p>
+</li>
+<li>
+<p>Write a few test cases for <code>order-cost</code>. You may or may not need to test all 6 possibilities, depending on how you structured your code. We will be lenient in grading tests for this assignment as long as you have put effort into creating valid and thorough tests.</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>Brown University CSCI 0111 (Fall 2018)<br>
+Do you have feedback? Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUq1lb2cjMdCuUGDf3jAZcArEI7cldMwxLfYXdwYkbWxCXXQ/viewform">this form</a>.</p>
+</blockquote>
+
+    </div>
+  </div>
+</body>
+<script>
+// make links to wide web open in a new tab; id urls
+// will scroll instead of opening in new tab
+$('.stackedit__right a').map(function(a, b) {
+    b = $(b);
+    if (b.attr('href').includes('http')) {
+        b.attr('target', '_blank');
+    }
+});
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>Helper Functions and How They Work</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="notes.css" title="default"/><link rel="stylesheet" type="text/css" href="scribble-custom.css" title="default"/><link rel="stylesheet" type="text/css" href="scribble-style.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="scribble-racket-lang-org"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_0&quot;);">&#9658;</a></td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Helper Functions and How They Work</a></td></tr></table></div><div class="tocviewsublistonly" style="display: none;" id="tocview_0"><table cellspacing="0" cellpadding="0"><tr><td align="right">1&nbsp;</td><td><a href="#%28part._.How_.Programs_with_.Helpers_.Evaluate%29" class="tocviewlink" data-pltdoc="x">How Programs with Helpers Evaluate</a></td></tr><tr><td align="right">2&nbsp;</td><td><a href="#%28part._.When_is_.Code__.Clean__%29" class="tocviewlink" data-pltdoc="x">When is Code "Clean"?</a></td></tr><tr><td align="right">3&nbsp;</td><td><a href="#%28part._.Practice__.Binge_.Alert_%29" class="tocviewlink" data-pltdoc="x">Practice:<span class="mywbr"> &nbsp;</span> Binge Alert!</a></td></tr><tr><td align="right">4&nbsp;</td><td><a href="#%28part._.Big_.Picture_.Take_.Aways%29" class="tocviewlink" data-pltdoc="x">Big Picture Take Aways</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.Helper_.Functions_and_.How_.They_.Work%29" class="tocsubseclink" data-pltdoc="x">Helper Functions and How They Work</a></td></tr><tr><td><span class="tocsublinknumber">1<tt>&nbsp;</tt></span><a href="#%28part._.How_.Programs_with_.Helpers_.Evaluate%29" class="tocsubseclink" data-pltdoc="x">How Programs with Helpers Evaluate</a></td></tr><tr><td><span class="tocsublinknumber">2<tt>&nbsp;</tt></span><a href="#%28part._.When_is_.Code__.Clean__%29" class="tocsubseclink" data-pltdoc="x">When is Code "Clean"?</a></td></tr><tr><td><span class="tocsublinknumber">3<tt>&nbsp;</tt></span><a href="#%28part._.Practice__.Binge_.Alert_%29" class="tocsubseclink" data-pltdoc="x">Practice:<span class="mywbr"> &nbsp;</span> Binge Alert!</a></td></tr><tr><td><span class="tocsublinknumber">4<tt>&nbsp;</tt></span><a href="#%28part._.Big_.Picture_.Take_.Aways%29" class="tocsubseclink" data-pltdoc="x">Big Picture Take Aways</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><h2><a name="(part._.Helper_.Functions_and_.How_.They_.Work)"></a>Helper Functions and How They Work</h2><p>Copyright (c) 2017 Kathi Fisler</p><p>We&rsquo;ve been advising you to look closely at your code and find
+opportunities to create <span style="font-style: italic">helper functions</span> to "clean up your
+code". How does Pyret run a program that has helpers?  What does
+"clean up" really mean?  How do you decide when to use helper
+functions or define named expressions?  This lecture steps back to
+review these questions, leveraging your having worked with these
+issues in lab and homework.</p><h3>1<tt>&nbsp;</tt><a name="(part._.How_.Programs_with_.Helpers_.Evaluate)"></a>How Programs with Helpers Evaluate</h3><p>Look at this complete file of the <a href="https://code.pyret.org/editor#share=1ORWgJrjljEnbncccGo323Vg7IlzbWuSy&amp;v=be0f222">pen-cost programs</a>.  The file has functions to compute the cost of
+the pens, add shipping charges, compute the cost with shipping, and to
+give a bulk discount on large orders. (We haven&rsquo;t yet seen the
+discount function in class).</p><p>Imagine that we enter <span class="stt">pen-cost(10, "smile")</span> at the prompt.
+How does Pyret evaluate this expression? It finds the definition of
+<span class="stt">pen-cost</span>, copies the function body, substitutes the arguments
+for the parameters, then evaluates the copied body.</p><p>Imagine that we enter <span class="stt">add-shipping(pen-cost(10, "smile"))</span> at
+the prompt. Pyret evaluates inside-out &ndash; it uses the substitution
+method to obtain the result of <span class="stt">pen-cost(10, "smile")</span>, which it
+then substitutes for <span class="stt">order-amt</span> in the body of
+<span class="stt">add-shipping</span>.</p><p>Some of you have asked about whether you can&#8212;<wbr></wbr>or need to&#8212;<wbr></wbr>re-use
+parameter names across different functions.  Let&rsquo;s step back and think
+about how substitution works. When a function gets called, Pyret
+replaces the parameter names with the input values.  This means that
+when the function body gets evaluated, the parameter names are
+no longer visible.  As a result, parameter names can&rsquo;t be
+confused or referenced across different functions.</p><p>Watch the lecture capture to see this demonstrated step-by-step.</p><h3>2<tt>&nbsp;</tt><a name="(part._.When_is_.Code__.Clean__)"></a>When is Code "Clean"?</h3><p>Generally speaking, <span style="font-style: italic">code is clean when the structure of the code
+reflects the high-level process/computation that the code performs</span>.
+Look at the body of <span class="stt">total-cost</span> &ndash; the expression in the body
+summarizes the computation. We compute the pen cost then add the
+shipping.  If you want the details of those steps, look at the bodies
+of the individual functions.</p><div class="programmingTip"><p><span style="font-weight: bold">Programming Tip</span>: When you get a programming problem, step back and ask what <span style="font-weight: bold">tasks or
+steps</span> the computation requires.  Plan to write a helper function for
+each of these tasks.</p></div><p>Named definitions inside functions arise for two purposes: either to
+name essential constants (character costs, pen prices, etc), or to
+name substeps of a task so you can easily find them later. The
+<span class="stt">total-cost-discount2</span> function shows one other use: to save us
+writing out the exact same computation twice.  <span style="font-style: italic">If you find
+yourself repeating a computation verbatim, write it once and name the
+result.</span></p><p><span style="font-style: italic">If you find yourself repeating a computation almost verbatim, you can
+create a helper function instead.</span> These helper functions arise not
+from high-level problem tasks, but from detail level repeated
+computations in code.</p><h3>3<tt>&nbsp;</tt><a name="(part._.Practice__.Binge_.Alert_)"></a>Practice: Binge Alert!</h3><p>Let&rsquo;s practice helpers and naming by working on the following problem.</p><div class="activity"><p>A phone manufacturer needs to compute whether people are binging
+   too much on apps in a 3-hour period.  The will rate people&rsquo;s usage
+   based on the number of minutes spent on Facebook or Snapchat, as well
+   as the number of times someone checked the news. People earn one usage
+   point per minute on social media and 3 points per news check.</p><p>Based on the number of usage points, the app will give a severity
+   rating of serious, moderate, mild, or normal.  The conditions for each
+   rating are as follows:</p><div class="itemtight"><ul><li><p>serious when usage is above 120 points</p></li><li><p>moderate when usage is above 60 points while at work or school</p></li><li><p>mild when usage is below 10 points</p></li><li><p>normal in all other cases</p></li></ul></div><p>Develop a function <span class="stt">binge-rating</span> that takes the numbers of Facebook minutes,
+   Snapchat minutes, and news checks, as well as the person&rsquo;s location (work,
+   school, vacation, etc) and returns a severity rating.</p></div><p>You can view the lecture capture to see how we developed this, and
+look at the <a href="https://code.pyret.org/editor#share=12YfHI5bphq5zacNRiRlbAZp4z-tfvH7J&amp;v=be0f222">final code file</a>. Pay particular attention to how the functions and
+named definitions capture the structure of the computation.</p><h3>4<tt>&nbsp;</tt><a name="(part._.Big_.Picture_.Take_.Aways)"></a>Big Picture Take Aways</h3><p>We started this course looking at how programs capture the structure
+of a computation or piece of complex data (i.e., images).  Which
+expressions we use and how we nest them reflects the structure of the
+data or computation in a way that people can read off that structure.</p><p>Helper functions are the next step up in reflecting structure in
+code. We use helpers to name key <span style="font-style: italic">tasks</span> within our
+problem. Accounting for shipping costs and discounts are core steps in
+letting someone order items.  We created a function for each task,
+tested each task separately from the others, then assembled the
+functions into our overall computation.</p><div class="csTip"><p><span style="font-weight: bold">Key idea in CS</span>: Use helpers to reflect the essential structure of the process you are
+performing in code. This aids readability of code and finding errors,
+since you can test each step separately.</p></div></div></div><div id="contextindicator">&nbsp;</div></body></html>

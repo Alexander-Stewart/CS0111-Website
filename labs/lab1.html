@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 1</title>
+  <script
+  src="jquery.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+  	body {
+  		background-color: #f8f8f8;
+	}
+  </style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#lab-1-transmission-decryptor">Lab 1: Transmission Decryptor</a></li>
+<li><a href="#problem-1">Problem 1</a>
+<ul>
+<li><a href="#instructions">Instructions</a></li>
+</ul>
+</li>
+<li><a href="#problem-2">Problem 2</a>
+<ul>
+<li><a href="#instructions-1">Instructions</a></li>
+<li><a href="#takeaway">Takeaway</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="lab-1-transmission-decryptor">Lab 1: Transmission Decryptor</h1>
+<h1 id="problem-1">Problem 1</h1>
+<p>Greetings! You are on your journey to Mars and need to send encrypted transmissions back to Mission Control on Earth. However, someone forgot to bring the instructions for the encryptor machine, and it’s up to you to figure out how it works!</p>
+<p>The encryptor has 10 black box functions that each encrypt a string in a different way. Your mission is to try each encryptor on various inputs to figure out how it works. Once you think you see the pattern, you’ll try to write your own function that tries to match what the encryptor does. You can then use some tests from our support file to see whether your version is correct.</p>
+<h2 id="instructions">Instructions</h2>
+<p>Include this at the top of your program:</p>
+<p><code>import shared-gdrive("support.arr", "1vZOpk94JH2DJOzO1xAf5ZYFX5ENuzhQP") as support</code></p>
+<p>Now you will be able to access all of the encryptors and their testers in your pyret file.</p>
+<p>The <em>encryptor functions</em> are named</p>
+<pre><code>support.encryptor1,
+support.encryptor2,
+support.encryptor3,
+support.encryptor4,
+...
+support.encryptor10
+</code></pre>
+<p>The encryptor functions take in strings as input (e.g: <code>support.encryptor1("earth")</code>) and produce an encrypted result (run this expression to see what the first encryptor does).</p>
+<p><strong>Note:</strong> Please keep a record of what strings you use to test each encryptor – you should be prepared to explain your choice of strings to a TA. You can do this by writing your calls (uses) of the encryptor functions in the definitions window.</p>
+<p>The <em>tester functions</em> are named, inspiringly,</p>
+<pre><code>support.test-encryptor1,
+support.test-encryptor2,
+support.test-encryptor3,
+support.test-encryptor4,
+...
+support.test-encryptor10
+</code></pre>
+<p>To use them, you must use the name of <em>your</em> function as an input. For example, if you wrote the function:</p>
+<pre><code>fun my-cool-encryptor(str :: String) -&gt; String:
+    #some code here
+end
+</code></pre>
+<p>You would test whether it is correct by running:</p>
+<pre><code>support.test-encryptor1(my-cool-encryptor)
+</code></pre>
+<p><strong>Hint:</strong> The encryptors are composed of functions from the <a href="https://www.pyret.org/docs/latest/strings.html">Pyret strings library</a>. Start out by reading through it for an idea of what kinds of operations the encryptors might use.</p>
+<hr>
+<h3 id="checkpoint">CHECKPOINT:</h3>
+<p><strong>Call over a TA once you have completed: <em>encryptor4</em>, <em>encryptor7</em>, and <em>encryptor10</em>.</strong></p>
+<hr>
+<h1 id="problem-2">Problem 2</h1>
+<p>Oh no – you just received a transmission from Earth that alien ships from Mars are heading towards you! According to mission control, they must have broken your encryption scheme. It’s up to you to create new encryption functions that the Martians won’t be able to figure out but Mission Control will still understand.</p>
+<h2 id="instructions-1">Instructions</h2>
+<p>In a new document, write your own encryptor function. Call it <code>new-encryptor</code>. It must take in a single string and produce some output. You may use any combination of functions from the <a href="https://www.pyret.org/docs/latest/strings.html">Pyret strings library</a> to build your function.</p>
+<p>Once you’re done, press the “Publish” button in the Pyret Code Editor and trade links with another group. Use the same format that you used to import <code>support.arr</code> – Call over a TA if you get stuck.  As you did with our encryptors, try to reproduce your classmates’ encryptor.</p>
+<hr>
+<h3 id="checkpoint-1">CHECKPOINT:</h3>
+<p><strong>Call over a TA once <em>both groups</em> have solved each other’s encryptors.</strong></p>
+<hr>
+<h2 id="takeaway">Takeaway</h2>
+<p>The goal of this lab was to help you get comfortable experimenting with code and with writing functions. Sometimes, you find out about a new function (perhaps something you found in the documentation) and need to be able to try it out to figure out what it does.  This lab tried to help you get a sense of how to experiment with a new function/operator, while also giving you some practice writing functions of your own.</p>
+
+    </div>
+  </div>
+</body>
+<script>
+// make links to wide web open in a new tab; id urls
+// will scroll instead of opening in new tab
+$('.stackedit__right a').map(function(a, b) {
+    b = $(b);
+    if (b.attr('href').includes('http')) {
+        b.attr('target', '_blank');
+    }
+});
+</script>
+</html>

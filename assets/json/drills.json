@@ -1,0 +1,277 @@
+[
+  {
+    "Display": true, 
+    "Drill #": "1", 
+    "In": "Sept 10 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1519652", 
+      "name": "Drill 1 (Canvas)"
+    }, 
+    "Out": "Sept 5", 
+    "Solutions": {
+      "link": "https://cs.brown.edu/courses/csci0111/drill-solns/drill-1-soln.pdf", 
+      "name": "D1 Sol"
+    }
+  }, 
+  {
+    "Display": true, 
+    "Drill #": "2", 
+    "In": "Sept 14 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1519818", 
+      "name": "Drill 2 (Canvas)"
+    }, 
+    "Out": "Sept 12", 
+    "Solutions": {
+      "link": "https://cs.brown.edu/courses/csci0111/drill-solns/drill-2-soln.pdf", 
+      "name": "D2 Sol"
+    }
+  }, 
+  {
+    "Display": true, 
+    "Drill #": "3", 
+    "In": "Sept 17 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1519879", 
+      "name": "Drill 3 (Canvas)"
+    }, 
+    "Out": "Sept 14", 
+    "Solutions": {
+      "link": "https://cs.brown.edu/courses/csci0111/drill-solns/drill-3-soln.pdf", 
+      "name": "D3 Sol"
+    }
+  }, 
+  {
+    "Display": true, 
+    "Drill #": "4", 
+    "In": "Sept 24 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1519909", 
+      "name": "Drill 4 (Canvas)"
+    }, 
+    "Out": "Sept 19", 
+    "Solutions": {
+      "link": "https://cs.brown.edu/courses/csci0111/drill-solns/drill-4-soln.pdf", 
+      "name": "D4 Sol"
+    }
+  }, 
+  {
+    "Display": true, 
+    "Drill #": "5", 
+    "In": "Sept 28 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1519907", 
+      "name": "Drill 5 (Canvas)"
+    }, 
+    "Out": "Sept 26", 
+    "Solutions": {
+      "link": "https://cs.brown.edu/courses/csci0111/drill-solns/drill-5-soln.pdf", 
+      "name": "D5 Sol"
+    }
+  }, 
+  {
+    "Display": true, 
+    "Drill #": "6", 
+    "In": "Oct 1 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1519906", 
+      "name": "Drill 6 (Canvas)"
+    }, 
+    "Out": "Sept 28", 
+    "Solutions": {
+      "link": "https://cs.brown.edu/courses/csci0111/drill-solns/drill-6-soln.pdf", 
+      "name": "D6 Sol"
+    }
+  }, 
+  {
+    "Display": true, 
+    "Drill #": "7", 
+    "In": "Oct 5 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1519908", 
+      "name": "Drill 7 (Canvas)"
+    }, 
+    "Out": "Oct 3", 
+    "Solutions": {
+      "link": "https://cs.brown.edu/courses/csci0111/drill-solns/drill-7-soln.pdf", 
+      "name": "D7 Sol"
+    }
+  }, 
+  {
+    "Display": false, 
+    "Drill #": "Survey", 
+    "In": "Oct 11 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1519908", 
+      "name": "Mid-course Survey (Qualtrics)"
+    }, 
+    "Out": "Oct 5", 
+    "Solutions": "---"
+  }, 
+  {
+    "Display": true, 
+    "Drill #": "8", 
+    "In": "Oct 12 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520442", 
+      "name": "Drill 8 (Canvas)"
+    }, 
+    "Out": "Oct 10", 
+    "Solutions": {
+      "link": "https://cs.brown.edu/courses/csci0111/drill-solns/drill-8-soln.pdf", 
+      "name": "D8 Sol"
+    }
+  }, 
+  {
+    "Display": true, 
+    "Drill #": "None", 
+    "In": "Oct 15 12PM", 
+    "Link": "No drill out for 10/15", 
+    "Out": "Oct 12", 
+    "Solutions": "---"
+  },
+  {
+    "Display": true, 
+    "Drill #": "9", 
+    "In": "Oct 19 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520415", 
+      "name": "Drill 9 (Canvas)"
+    }, 
+    "Out": "Oct 17", 
+      "Solutions": "---"
+  },
+  {
+    "Display": true, 
+    "Drill #": "10", 
+    "In": "Oct 22 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520421", 
+      "name": "Drill 10 (Canvas)"
+    }, 
+    "Out": "Oct 19", 
+    "Solutions": "---"
+  }, {
+    "Display": true, 
+    "Drill #": "11", 
+    "In": "Oct 26 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520467", 
+      "name": "Drill 11 (Canvas)"
+    }, 
+    "Out": "Oct 24", 
+    "Solutions": "---"
+  },
+    {
+    "Display": true, 
+    "Drill #": "12", 
+    "In": "Oct 29 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520531", 
+      "name": "Drill 12 (Canvas)"
+    }, 
+    "Out": "Oct 26", 
+    "Solutions": "---"
+  },
+{
+    "Display": true, 
+    "Drill #": "13", 
+    "In": "Nov 2 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520515", 
+      "name": "Drill 13 (Canvas)"
+    }, 
+    "Out": "Oct 31", 
+    "Solutions": "---"
+  },
+{
+    "Display": true, 
+    "Drill #": "14", 
+    "In": "Nov 5 12PM", 
+    "Link": {
+      "link": "https://cs.brown.edu/courses/csci0111/data/drill-14.html", 
+      "name": "Drill 14"
+    }, 
+    "Out": "Oct 31", 
+    "Solutions": "---"
+  },
+{
+    "Display": true, 
+    "Drill #": "15", 
+    "In": "Nov 9 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520583", 
+      "name": "Drill 15 (Canvas)"
+    }, 
+    "Out": "Nov 7", 
+    "Solutions": "---"
+  },
+{
+    "Display": true, 
+    "Drill #": "16", 
+    "In": "Nov 12 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520632", 
+      "name": "Drill 16 (Canvas)"
+    }, 
+    "Out": "Nov 9", 
+    "Solutions": "---"
+},
+    {
+    "Display": true, 
+    "Drill #": "17", 
+    "In": "Nov 19 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520657", 
+      "name": "Drill 17 (Canvas)"
+    }, 
+    "Out": "Nov 14", 
+    "Solutions": "---"
+    },
+{
+    "Display": true, 
+    "Drill #": "18", 
+    "In": "Nov 19 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520519", 
+      "name": "Drill 18 (Canvas)"
+    }, 
+    "Out": "Nov 16", 
+    "Solutions": "---"
+  },
+{
+    "Display": true, 
+    "Drill #": "19", 
+    "In": "Nov 28 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520660", 
+      "name": "Drill 19 (Canvas)"
+    }, 
+    "Out": "Nov 26",
+    "Solutions": "---"
+},
+{
+    "Display": true, 
+    "Drill #": "20 - part 1", 
+    "In": "Nov 30 12PM", 
+    "Link": {
+      "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520717", 
+      "name": "Drill 20 (Canvas)"
+    }, 
+    "Out": "Nov 26",
+    "Solutions": "---"
+},
+{
+    "Display": true, 
+    "Drill #": "20 - part 2", 
+    "In": "Dec 3 12PM", 
+    "Link": {
+	"link": "https://docs.google.com/forms/d/e/1FAIpQLScCyanzysoH69cBb0Lz9kF4Fyfd-DhUaxoUYjhtseeKgHHpHw/viewform?usp=sf_link",
+      "name": "Drill 21 (Google)"
+    }, 
+    "Out": "Nov 27",
+    "Solutions": "https://canvas.brown.edu/files/61750378/download?download_frd=1"
+  }
+]
+
+

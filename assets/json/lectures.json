@@ -1,0 +1,687 @@
+[
+    {
+      "Date": "Dec 7th", 
+      "Display": true, 
+      "Lecture Capture": {
+	  "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5376e59e-d1bc-45b6-bf02-a9b300f9b1b3",
+	  "name": "video"
+      }, 
+	"Readings": [],
+      "Summary": [
+	  {
+              "link": "https://papl.cs.brown.edu/2018/predicting-growth.html", 
+              "name": "Book chapter"
+	  }
+      ], 
+      "Topic": "18 Bridge: Run-time Formally"
+    }, 
+    {
+      "Date": "Dec 7th", 
+      "Display": true, 
+      "Lecture Capture": {
+	  "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a4190ff5-3ea4-4e46-ac7b-a9af015592b4", 
+	  "name": "video"
+      }, 
+      "Readings": [
+	  {
+              "link": "https://docs.google.com/forms/d/e/1FAIpQLSdsYFXi-iVl0FmBrBxS7VEh262_wItH6QnuZxdNXpum-60OEQ/viewform?usp=sf_link", 
+              "name": "Course-specific eval questions"
+	  }
+      ], 
+      "Summary": [
+	  {
+              "link": null, 
+              "name": "---"
+	  }
+      ], 
+      "Topic": "A Taste of Machine Learning; Course Evals"
+    }, 
+    {
+	"Date": "Dec 5th", 
+	"Display": true, 
+	"Lecture Capture": {
+	    "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=decc1132-d3ab-4aff-8ab9-a9ad0163e88b", 
+	    "name": "video"
+	}, 
+	"Readings": [],
+	"Summary": [
+	    {
+		"link": "https://norvig.com/spell-correct.html", 
+		"name": "Blog post"
+	    }
+	], 
+	"Topic": "Building a spellchecker"
+    }, 
+  {
+    "Date": "Dec 3rd", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=89b0a270-50ed-48f2-aac6-a9ab0157c4a5", 
+      "name": "video"
+    }, 
+    "Readings": [
+      {
+        "name": "review of product tracing", 
+        "link": "https://canvas.brown.edu/files/61749756/download?download_frd=1"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/arrays-and-break.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Reviewing Program Execution; Arrays"
+  },
+  {
+    "Date": "Nov 30th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b1d307a0-bd77-4325-b4dd-a9a8014fc690", 
+      "name": "video"
+    }, 
+    "Readings": [
+      {
+        "link": "lectures/code/nested-hashtables.py", 
+        "name": "Code example"
+      },
+      {
+        "link": "lectures/nested-hashtables-memory.pptx", 
+        "name": "Powerpoint with code memory diagram"
+      }	
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/hashtable-design.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Memory Review and Design Practice"
+  }, 
+  {
+    "Date": "Nov 28th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7f4a359d-5cf7-468f-a66b-a9a60144eaa5", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/how-hashtables-work.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "How Hashtables Work"
+  }, 
+  {
+    "Date": "Nov 26th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=886b07e4-e92c-4619-8fd5-a9a4014c59fb", 
+      "name": "video"
+    }, 
+    "Readings": [
+      {
+        "link": "lectures/code/hashtables.py", 
+        "name": "starter file and solution"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/hashtables.html", 
+        "name": "Notes (hashtables)"
+      },
+      {
+        "link": "lectures/global.html", 
+        "name": "Notes (global)"
+      }
+    ], 
+    "Topic": "Hashtables"
+  }, 
+  {
+    "Date": "Nov 19th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1e48924d-a816-4b8a-b9e8-a99d014675c9", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/circ-refs-hashtables.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Circular Data; Intro to Hashtables"
+  }, 
+  {
+    "Date": "Nov 12th", 
+      "Display": true, 
+      "Lecture Capture": {
+	  "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7523bf37-2652-4c19-a057-a996014fe180", 
+	  "name": "video"
+      }, 
+      "Readings": [],
+      "Summary": [
+	  {
+              "link": "lectures/update-equality.html", 
+	      "name": "Notes"
+	  }
+      ], 
+      "Topic": "Updating Values; Equality between Values"
+  }, 
+  {
+    "Date": "Nov 9th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8cc6788f-c9e5-412d-bd89-a99301459ab7", 
+      "name": "video"
+    }, 
+      "Readings": [
+       {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Dataclasses and Testing"
+  }, 
+  {
+    "Date": "Nov 7th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a3f5a89b-c9cd-455d-b7d8-a9910157c74a", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Python Tracing/Debugging and Loops Practice"
+  }, 
+  {
+    "Date": "Nov 5th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=79d8dbc8-4e8a-4501-bf8f-a98f0157b079", 
+      "name": "video"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Python Lists and Loops"
+  }, 
+  {
+    "Date": "Nov 2nd", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d803de67-8332-4d87-85bb-a98c012e95b5", 
+      "name": "video"
+    }, 
+      "Readings": [
+      {
+        "link": "https://code.pyret.org/editor#share=1a2STWoz3gooQuKfAjef0jQ_Qkpj_-l-A&v=be0f222", 
+        "name": "the Pyret code to translate"
+      },
+      {
+        "link": "lectures/code/python-basics.py", 
+        "name": "the Python version"
+      },
+      {
+        "link": "lectures/code/testlight.py", 
+        "name": "testlight.py file"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/tracing-intree.pptx", 
+        "name": "tree dict slides"
+      }
+    ], 
+    "Topic": "Tree Dictionaries and Intro to Python"
+  }, 
+  {
+    "Date": "Oct 31st", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4d1ef84e-5081-4746-b30d-a98a0134e7aa", 
+      "name": "video"
+    }, 
+    "Readings": [
+      {
+        "link": "https://code.pyret.org/editor#share=1nxHkRaSQEXQ0AQCGp9snLWWe4fLwOiPk&v=be0f222", 
+        "name": "code from class"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/processing-trees.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Processing Trees"
+  }, 
+  {
+    "Date": "Oct 29th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=05693824-e5d0-4c71-98a3-a988014889f9", 
+      "name": "video"
+    }, 
+    "Readings": [
+      {
+        "link": "https://code.pyret.org/editor#share=1Ibh_YZEItVei4EnMR52kQITaG6Ft2iz5&v=be0f222", 
+        "name": "starter file"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/data-and-trees.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Trees: Data for ancestry"
+  }, 
+  {
+    "Date": "Oct 26th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb5bc164-8e1d-4e60-a178-a985014310a8", 
+      "name": "video"
+    }, 
+      "Readings":
+      [ { "link" : "https://code.pyret.org/editor#share=1NuSmoh2WVdK3_aI6wQhW0gKID_QcR44-&v=be0f222",
+	  "name": "code file from class" }
+      ],
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Program Efficiency"
+  }, 
+  {
+    "Date": "Oct 24nd", 
+    "Display": true, 
+    "Lecture Capture": {
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9f91b898-33b3-4eee-b783-a9830167551f",
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/mixed-data.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Datatypes with Multiple Constructors"
+  }, 
+  {
+    "Date": "Oct 22nd", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7f77c5c9-8980-4721-88db-a9810169a504", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/datatypes-evaluation.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Program Evaluation Revisited; More Data Design"
+  }, 
+  {
+    "Date": "Oct 19th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=64dac96b-6243-4633-8378-a97e013252a5", 
+      "name": "video"
+    }, 
+      "Readings": [
+	  {
+	      "link": "https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/",
+	      "name": "Using Metadata to find Paul Revere (optional/for fun)"
+	  }
+      ],
+    "Summary": [
+      {
+        "link": "lectures/datatypes-intro.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Introduction to Datatypes"
+  },     
+  {
+      "Date": "Oct 17th", 
+      "Display": true, 
+      "Lecture Capture": {
+	  "name": "video", 
+	  "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4fa6bc15-2ec7-4130-8043-a97c01380054"
+      }, 
+    "Readings": [
+    ], 
+    "Summary": [
+      {
+          "link": "lectures/design-recipe.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "The Design Recipe"
+  }, 
+  {
+      "Date": "Oct 15th", 
+      "Display": true, 
+      "Lecture Capture": {
+	  "name": "video", 
+	  "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=acc52b50-c984-4da9-bdbc-a97a015602f6"
+      }, 
+    "Readings": [
+    ], 
+    "Summary": [
+      {
+          "link": "lectures/lists-to-atomics.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Functions over Lists 2"
+  }, 
+  {
+    "Date": "Oct 12th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "name": "video", 
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=23ce89ea-9a8b-4ea5-9486-a9790189fe9e"
+    }, 
+    "Readings": [
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/processing-lists.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Writing Functions over Lists"
+  }, 
+  {
+    "Date": "Oct 10th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "Oops -- no recording for today"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/list-operations.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Operations on Lists"
+  }, 
+ {
+    "Date": "Oct 5th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=122ac825-b053-4aa7-a9c8-a970013bd216", 
+      "name": "video"
+    }, 
+    "Readings": [
+      {
+        "link": "https://code.pyret.org/editor#share=1EtlvTO1tl6icyo6J7HjgtSwpIL4y5LLl&v=be0f222", 
+        "name": "Starter File"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/intro-to-lists.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Lookup Cells; Intro to Lists"
+  }, 
+   {
+    "Date": "Oct 3rd", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2b849fc1-814e-4d9a-b825-a96e013c64ce", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/table-formats.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Nested Functions Review; Table Organization"
+  }, 
+  {
+    "Date": "Oct 1st", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1de0e341-e729-45bb-9b53-a96c017a0146", 
+      "name": "video"
+    }, 
+    "Readings": [
+	{
+            "link": "https://code.pyret.org/editor#share=1utrq8Hx_WUZSmwvbTu9PZXf6xnekTk3X&v=be0f222", 
+            "name": "Starter code file"
+	},
+	{
+            "link": "https://docs.google.com/spreadsheets/d/1g6kL2aS_C_K_j9hMWMygoaPaUzRl0X-8xEVMZ0q9GNI", 
+            "name": "Starter spreadsheet"
+	},
+	{
+	    "link": "https://code.pyret.org/editor#share=1B3mztfiJwbZ84ankjHj_7KV-n7CeISWL&v=be0f222",
+	    "name": "Final code file"
+	}
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/table-errors.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Dealing with Errors in Data"
+  }, 
+  {
+    "Date": "Sep 28th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a12641b-73a1-4e4a-a783-a969015aa548", 
+      "name": "video"
+    }, 
+      "Readings": [
+	  {
+	      "link": "https://code.pyret.org/editor#share=1cK_w-fV6aOorWhRETP9dPsY3QRxnwLqo&v=be0f222",
+	      "name": "Starter File/Handout"
+	  }
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/testing-tables.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Testing Tables; Plots"
+  }, 
+  {
+    "Date": "Sep 26th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cacb222d-f9b7-4b0c-9f08-a967012a0a7b", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/how-tables-evaluate.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "How Table Programs Evaluate"
+  }, 
+  {
+    "Date": "Sep 24th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ee69abe-9324-4446-add8-a965013d2300", 
+      "name": "video"
+    }, 
+    "Readings": [
+      {
+        "link": "https://code.pyret.org/editor#share=10oF-_JmzKbGAWCRQ05he-r-EzY5_D8Or&v=be0f222", 
+        "name": "Starter File"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": "lectures/tables-intro.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Introduction to Tables"
+  }, 
+  {
+    "Date": "Sep 21st", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7af0f915-9e1b-4dd8-8190-a962017c7af9", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": null, 
+        "name": "None today"
+      }
+    ], 
+    "Topic": "Guest Lecture - Michael Littman: Data analysis in unix"
+  }, 
+    {
+    "Date": "Sep 19th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=167170ed-cd48-45c2-b5b6-a96001602f0c", 
+      "name": "video"
+    }, 
+	"Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/helper-functions.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Helper Functions: Review and How They Evaluate"
+  }, 
+  {
+    "Date": "Sep 17th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ca7d498-3d6f-4bb0-a2f8-a95e014d7eda", 
+      "name": "video"
+    }, 
+    "Readings": [], 
+    "Summary": [
+      {
+        "link": "lectures/conditional-bool-review.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "More Conditionals and Booleans"
+  }, 
+  {
+    "Date": "Sep 14th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=27bb0df5-21dc-4337-81eb-a95b0130c619", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/conditionals.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Conditionals and Booleans"
+  }, 
+  {
+    "Date": "Sep 12th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c11ca96-dc2a-46d4-959b-a95901589f84", 
+      "name": "video"
+    }, 
+    "Readings": [], 
+    "Summary": [
+      {
+        "link": "lectures/functions-intro.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Introduction to Functions"
+  }, 
+  {
+    "Date": "Sep 10th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=91ff5887-6165-4a54-b026-a9570149636e", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/naming.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Naming Values and Code Organization"
+  }, 
+  {
+    "Date": "Sep 7th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=536ab318-ad9b-40a8-9270-a954015d4a68", 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/nums-strings-images.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Expressions and Building Images"
+  }, 
+  {
+    "Date": "Sep 5th", 
+    "Display": true, 
+    "Lecture Capture": {"name": "video", "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2e9a4e7b-7980-4cbf-8349-a9520153ad86"}, 
+    "Readings": [], 
+    "Summary": [{"name": "Notes", "link": "lectures/course-overview.html"}], 
+    "Topic": "Course Overview"
+  }
+]
+

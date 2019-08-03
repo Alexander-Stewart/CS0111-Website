@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>Class summary: Table Errors</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="notes.css" title="default"/><link rel="stylesheet" type="text/css" href="scribble-style.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="scribble-racket-lang-org"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_0&quot;);">&#9658;</a></td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Class summary:<span class="mywbr"> &nbsp;</span> Table Errors</a></td></tr></table></div><div class="tocviewsublistonly" style="display: none;" id="tocview_0"><table cellspacing="0" cellpadding="0"><tr><td align="right">1&nbsp;</td><td><a href="#%28part._.Errors_in_.Data%29" class="tocviewlink" data-pltdoc="x">Errors in Data</a></td></tr><tr><td align="right">2&nbsp;</td><td><a href="#%28part._.Cleaning_and_.Repairing_.Data%29" class="tocviewlink" data-pltdoc="x">Cleaning and Repairing Data</a></td></tr><tr><td align="right">3&nbsp;</td><td><a href="#%28part._.Cleaning_and_.Error_.Checking_.Tips%29" class="tocviewlink" data-pltdoc="x">Cleaning and Error Checking Tips</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.Class_summary__.Table_.Errors%29" class="tocsubseclink" data-pltdoc="x">Class summary:<span class="mywbr"> &nbsp;</span> Table Errors</a></td></tr><tr><td><span class="tocsublinknumber">1<tt>&nbsp;</tt></span><a href="#%28part._.Errors_in_.Data%29" class="tocsubseclink" data-pltdoc="x">Errors in Data</a></td></tr><tr><td><span class="tocsublinknumber">2<tt>&nbsp;</tt></span><a href="#%28part._.Cleaning_and_.Repairing_.Data%29" class="tocsubseclink" data-pltdoc="x">Cleaning and Repairing Data</a></td></tr><tr><td><span class="tocsublinknumber">3<tt>&nbsp;</tt></span><a href="#%28part._.Cleaning_and_.Error_.Checking_.Tips%29" class="tocsubseclink" data-pltdoc="x">Cleaning and Error Checking Tips</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><h2><a name="(part._.Class_summary__.Table_.Errors)"></a>Class summary: Table Errors</h2><p>Copyright (c) 2017 Kathi Fisler</p><h3>1<tt>&nbsp;</tt><a name="(part._.Errors_in_.Data)"></a>Errors in Data</h3><p>We began by looking at a <a href="https://docs.google.com/spreadsheets/d/1g6kL2aS_C_K_j9hMWMygoaPaUzRl0X-8xEVMZ0q9GNI">Google Sheet</a> with data gathered about people registering for an
+event (like a show). The middle sheet includes some simple analysis on
+the data, such as the numbers of tickets sold, student tickets sold,
+and full-fare (no discount) tickets sold.</p><p>We looked at the table and the analysis data and enumerated possible
+errors in the data.  These included invalid email addresses, numbers
+written in words, differences in capitalization, and options that seem
+inconsistent with one another.  All of these errors are the kinds of
+things that can happen with real data.</p><p>We loaded the spreadsheet into Pyret and wrote expressions to do the
+same analysis (in the <a href="https://code.pyret.org/editor#share=1B3mztfiJwbZ84ankjHj_7KV-n7CeISWL&amp;v=be0f222">starter file</a>).  Pyret produced different answers to some
+questions. What gives?</p><div class="csTip"><p><span style="font-weight: bold">Key idea in CS</span>: While programming tools (which include Excel and Google Sheets)
+typically produce the same answers on valid data, different tools
+often take very different approaches on data with errors.  Some tools
+skip over missing data, some interpret it as zero or an empty
+string. Some tools warn you about invalid data, others do their best
+to produce answers.  There are arguments for and against each of these
+positions, depending on context.</p><p>Your job is to be aware of this, to know how to check for invalid data
+problems, and to have a habit of checking and cleaning your data
+before use (especially if you got that data from someone else!).</p></div><h3>2<tt>&nbsp;</tt><a name="(part._.Cleaning_and_.Repairing_.Data)"></a>Cleaning and Repairing Data</h3><p>We talked about what kinds of errors must be fixed in the source
+spreadsheet, and what errors we can fix through code. We also
+introduced a Pyret concept called a <span style="font-style: italic">sanitizer</span>, which converts
+all data in a column to a given type (turning missing data into empty
+strings for string columns, missing numbers into 0 on numeric columns,
+and so on).  The <a href="https://code.pyret.org/editor#share=1B3mztfiJwbZ84ankjHj_7KV-n7CeISWL&amp;v=be0f222">final code</a> (also posted on the lectures page) shows how to use
+sanitizers.</p><p>The final posted code shows using <span class="stt">filter-by</span> to detect errors
+such as invalid email addresses.  It showed a new table operation
+called <span class="stt">transform-column</span>, which replaces the contents of a cell
+with a new computed value (this is good for converting a column to
+uppercase, for example).  The final code and the lecture capture show
+how these were developed.</p><h3>3<tt>&nbsp;</tt><a name="(part._.Cleaning_and_.Error_.Checking_.Tips)"></a>Cleaning and Error Checking Tips</h3><p>The general takeaways from this lecture are as follows:</p><ul><li><p>Always run sanity checks on your data before doing analysis,
+especially if the data is from an external source.</p></li><li><p>Sanity checks can be done by filtering for unexpected inputs, or
+by generating plots that make sure the data looks as you might
+expect.  For example, creating a bar chart of ticket orders highlights
+that Ernie and Zander have unusually high and low numbers of tickets
+&ndash; that might be an error to fix.  Creating a frequency bar chart of
+delivery methods reveals a misspelling of "email" as "emall" in one
+row.  Making initial plots to poke around is a good way to look for
+problems in your data.</p></li><li><p>In general, when you get a new dataset, use code to sanity check
+it, repair it, and save a copy of the clean data in a different
+variable name that you then use for the actual analysis. You will see
+this structure reflected in the final code file for this lecture.</p></li></ul></div></div><div id="contextindicator">&nbsp;</div></body></html>

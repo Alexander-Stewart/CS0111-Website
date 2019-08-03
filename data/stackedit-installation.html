@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackedit Installation</title>
+  <script
+  src="jquery.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+  	body {
+  		background-color: #f8f8f8;
+	}
+  </style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#stackedit-installation">Stackedit Installation</a></li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="stackedit-installation">Stackedit Installation</h1>
+<p>(For TAs only)</p>
+<ol>
+<li>
+<p>Go to <a href="http://stackedit.io/app">stackedit.io/app</a>.</p>
+</li>
+<li>
+<p>Go to Right sidebar &gt; Sign in with Google and sign in with your Brown account.</p>
+</li>
+<li>
+<p>In the right sidebar, click “Workspaces”  then add these Google Drive workspaces:</p>
+
+<table>
+<thead>
+<tr>
+<th>Workspace Name</th>
+<th>Folder ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Projects</td>
+<td>1qyGuwUVFkXd0USOkKvwnyqLgVMoyN48m</td>
+</tr>
+<tr>
+<td>Homeworks</td>
+<td>1fZp2SuKleLQ9COAPPWVVKVK4_svM4VCj</td>
+</tr>
+<tr>
+<td>Drills</td>
+<td>17_H1Gg1Hfma9zY8EIggg-undoFfNWdw8</td>
+</tr>
+<tr>
+<td>Support Docs</td>
+<td>1jKs4ZDIG2ffWDQLxTnHbpSFoqNuoTBnh</td>
+</tr>
+<tr>
+<td>Labs</td>
+<td>1AisVXv_EHytkMrMy4-Iia-KGuMlu5nwa</td>
+</tr>
+</tbody>
+</table></li>
+<li>
+<p>Whenever you export, use the CS111 template!</p>
+</li>
+</ol>
+
+    </div>
+  </div>
+</body>
+<script>
+// make links to wide web open in a new tab; id urls
+// will scroll instead of opening in new tab
+$('.stackedit__right a').map(function(a, b) {
+    b = $(b);
+    if (b.attr('href').includes('http')) {
+        b.attr('target', '_blank');
+    }
+});
+</script>
+</html>

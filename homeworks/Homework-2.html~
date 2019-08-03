@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 2</title>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+  	body {
+  		background-color: #f8f8f8;
+	}
+  </style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#homework-2-leaving-earth">Homework 2: Leaving Earth</a>
+<ul>
+<li><a href="#helpful-things">Helpful Things</a></li>
+<li><a href="#the-assignment">The Assignment</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="homework-2-leaving-earth">Homework 2: Leaving Earth</h1>
+<p><strong>Due:</strong> Tuesday September 18 2018, 9:00PM.<br>
+<strong>Late Deadline:</strong> Wednesday September 19 2018, 5:00PM.<br>
+<img src="https://previews.123rf.com/images/usbfco/usbfco1601/usbfco160100086/52061319-cute-cartoon-mars-with-rocket.jpg" alt="enter image description here" width="400" height="400"></p>
+<p>After completing the homework, you will submit:</p>
+<ul>
+<li><code>bingebreaker.txt</code></li>
+<li><code>coordinates.arr</code></li>
+<li><code>circle.arr</code></li>
+<li><code>battleplans.arr</code></li>
+</ul>
+<p>Hand in your work at this <a href="https://goo.gl/forms/5IUmCl1fQkzMR5Sg1">Google Form</a> (<a href="https://goo.gl/forms/5IUmCl1fQkzMR5Sg1">https://goo.gl/forms/5IUmCl1fQkzMR5Sg1</a>).</p>
+<h2 id="helpful-things">Helpful Things</h2>
+<h3 id="setup">Setup</h3>
+<p>You will need a text editor to write your answer to the first question.  Any text editor is fine, and your laptop should already have one (TextEdit on Mac, NotePad on Windows). You could also install a more powerful text editor (such as Atom, instructions <a href="texteditors.html">here</a>), but this is not required. If you are still having a hard time, come to hours or post on Piazza!</p>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><a href="https://www.pyret.org/docs/latest/">Pyret Documentation</a>, accessible from the Pirate button in the top left corner of <a href="http://code.pyret.org">code.pyret.org</a>. The Image and String documentation will likely be the most useful for this assignment.</li>
+</ul>
+<h3 id="useful-functions">Useful Functions</h3>
+<ul>
+<li>
+<p><code>not</code> is a builtin function that takes a Boolean, and inverts it (<code>not(true)</code> → <code>false</code> and <code>not(false)</code> → <code>true</code>)</p>
+</li>
+<li>
+<p><code>==</code> is an equality test; <code>3 == 3</code> → <code>true</code> and <code>3 == 4</code> → <code>false</code>.</p>
+</li>
+<li>
+<p><code>&lt;&gt;</code> is an inequality test; <code>3 &lt;&gt; 4</code> → <code>true</code> and <code>3 &lt;&gt; 3</code> → <code>false</code></p>
+</li>
+</ul>
+<h2 id="the-assignment">The Assignment</h2>
+<h3 id="binge-breaker">Binge Breaker</h3>
+<ol>
+<li>
+<p>Read this article: <a href="https://www.theatlantic.com/magazine/archive/2016/11/the-binge-breaker/501122/">The Binge Breaker</a>.</p>
+</li>
+<li>
+<p>Make a new text file called <code>bingebreaker.txt</code> (see <a href="#setup">setup</a>).</p>
+</li>
+<li>
+<p>Write a reflection on this article in <code>bingebreaker.txt</code>. This reflection should be 2-3 short paragraphs, but we are not looking for length. You should include a <strong>brief</strong> summary of the article (two to three sentences). Some things to write about:</p>
+<ul>
+<li>
+<p>What is your reaction to the article? Is this a real problem? To what extent or in what ways does this problem concern you (if at all)? Why?</p>
+</li>
+<li>
+<p>How could this problem be addressed by the computer science community?</p>
+</li>
+<li>
+<p>How could this problem be addressed in broader human/social/policy contexts?</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the same file, write a short, one-paragraph comparison the standard Gmail and the “raw HTML” Gmail, as seen here:</p>
+<ol>
+<li>
+<p>(standard gmail)<br>
+<a href="https://mail.google.com/mail/u/0/#inbox">https://mail.google.com/mail/u/0/#inbox</a></p>
+</li>
+<li>
+<p>(html gmail)<br>
+<a href="http://mail.google.com/mail/h/">http://mail.google.com/mail/h/</a></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Consider these questions:</p>
+<ul>
+<li>
+<p>What information is different between the two versions?</p>
+</li>
+<li>
+<p>What are the main design differences between the two versions?</p>
+</li>
+<li>
+<p>Relate this to the Binge Breaker article.</p>
+</li>
+</ul>
+<h3 id="coordinates">Coordinates</h3>
+<p>You’ve just arrived to the spaceship that will take you to your next destination and sat in the pilot chair! Yes! In order to get to your next destination, Mars, you need to enter in its coordinates. However, if you don’t follow the ship’s rules about how to enter the coordinates, you will be locked out of the system and be stuck on Earth.</p>
+<p>The coordinate string must:</p>
+<ul>
+<li>
+<p>Be wrapped in diamond parentheses ( <code>"&lt;"</code> and <code>"&gt;"</code> are the first and last characters, respectively).</p>
+</li>
+<li>
+<p>Have a comma as their middle character, with the same number of characters on either side of it (ie <code>"&lt;db,in&gt;"</code> and <code>"&lt;slow,down&gt;"</code> are  ok, but <code>"&lt;d,abc&gt;"</code> and "<code>&lt;ddab&gt;"</code> are not.</p>
+</li>
+<li>
+<p>Not contain a minus sign (<code>-</code>).</p>
+</li>
+<li>
+<p>Not contain the sequence <code>0000</code> (ie <code>"&lt;00,00&gt;"</code> is ok, but <code>"&lt;0000,1234&gt;"</code> is not).</p>
+</li>
+</ul>
+<p>Write a function <code>coordinate-check</code> in a file called <code>coordinates.arr</code> that takes in a coordinate String and returns <code>true</code> if the coordinates follow the rules, and <code>false</code> if they do not.</p>
+<p>Examples:</p>
+<ul>
+<li>
+<p><code>coordinate-check("&lt;abc,-12&gt;")</code> → <code>false</code> (contains <code>-</code>).</p>
+</li>
+<li>
+<p><code>coordinate-check("&lt;dog,cat&gt;")</code> → <code>true</code>.</p>
+</li>
+</ul>
+<p><strong>Warning</strong>: being able to look in language documentation for useful operations is an important skill, which is why we aren’t telling you exactly which string operations to use.  We want you to look at the string documentation to find useful operations for solving this problem.  However, limit yourself to operations with input and output types that we have used this semester (Number, String, Boolean). Don’t use operations that return List, as we haven’t covered that yet.</p>
+<h3 id="complete-the-circle">Complete the circle</h3>
+<p>When you finally land on Mars, you encounter a Martian named Eli. He likes your camera, and especially your photo of some blurry stars in a circle. However, he rips up the picture in his excitement! Now you have to figure out how to recreate the image using just the upper left quadrant.</p>
+<p>Make a new file called <code>circle.arr</code> and copy this code in.</p>
+<pre><code>include image
+
+fun get-quadrant() -&gt; Image:
+  doc: 'load upper left quadrant of the circle'
+  # do not edit this function
+  image-url('https://cs.brown.edu/courses/csci0111/data/ul.png')
+end
+</code></pre>
+<p>Write a function <code>complete-circle</code> which uses <code>get-quadrant</code> and other image operations to produce a circle of blurry stars. Keep repeated code to a minimum by using helper functions and constants where appropriate.</p>
+<h3 id="battle-plans">Battle plans</h3>
+<p>As a gesture of good will after the camera incident, Eli shares some Martian code with you. He tells you that the fighter pilots of Mars use the code to train for battle.</p>
+<p>Copy this code into a new Pyret file called <code>battleplans.arr</code>; run the function <code>draw-game-screen</code> with a few different numerical inputs to see how it works.</p>
+<pre><code>include image
+
+mainurl = 'https://cs.brown.edu/courses/csci0111/data/spaceship1.png'
+enemyurl = 'https://cs.brown.edu/courses/csci0111/data/spaceship2.png'
+
+s1 = image-url(mainurl)
+s2 = image-url(enemyurl)
+
+fun draw-game-screen(position):
+  underlay-xy(
+    underlay-xy(rectangle(300, 600, 'solid', 'black'), position, 500, s1),
+    30, 20,
+    above(
+      beside(
+        flip-vertical(s2),
+        beside(
+          rectangle(100, 1, 'solid', 'transparent'),
+          flip-vertical(s2))),
+      above(
+        rectangle(1, 50, 'solid', 'transparent'),
+        flip-vertical(s2))))
+end
+</code></pre>
+<p>However, this Martian script does not follow your CS111 style guide!</p>
+<ol>
+<li>
+<p>Add a type annotation to the function.</p>
+</li>
+<li>
+<p>Add a docstring to the function. Good documentation includes:</p>
+<ul>
+<li>
+<p>A description of the input(s).</p>
+</li>
+<li>
+<p>A description of the output.</p>
+</li>
+<li>
+<p>Any restrictions on the input(s).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Clean up this function; keep the same function name, <code>draw-game-screen</code>.<br>
+<strong>Note:</strong> the output image does not have to be exactly the same, but it should be similar.<br>
+<strong>Tip:</strong> Sometimes it can be very hard to read code. It can help to try changing some numbers around and seeing what effect that has.</p>
+<ul>
+<li>
+<p>Numbers used for positioning should not be hard-coded, but should be given a useful name.  For example, <code>CIRCLE-RADIUS + PADDING</code> is clearer than <code>30 + 5</code>.</p>
+</li>
+<li>
+<p>Numbers that are based on their context should be computed based on their context. For example, the circle in Greenland’s flag would be moved horizontally based on the width of the entire flag (maybe <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mord">/</span><span class="mord">3</span></span></span></span></span> the flag’s width), not using a seemingly arbitrary number like <code>100</code>.<br>
+The <code>image-width</code> and <code>image-height</code> functions may be helpful for this.</p>
+</li>
+<li>
+<p>Remove repeated computation using either helper functions or constants.</p>
+</li>
+<li>
+<p>Rename constants if they are unclearly named.</p>
+</li>
+<li>
+<p>Add short comments for lines that may not be intuitive.</p>
+</li>
+<li>
+<p>When you are making constants, think about whether to put them inside or outside of the function. In general, you should only have constants inside of the function if they depend on the inputs.</p>
+<pre><code>pi = 3.14
+fun area(R):
+	pi * num-sqr(R)
+end
+</code></pre>
+<p>is cleaner than</p>
+<pre><code>fun area(R):
+	pi = 3.14
+	pi * num-sqr(R)
+end
+</code></pre>
+<p>There is no need to redefine <code>pi</code> every single time <code>area</code> is used; <code>pi</code> never changes.</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>Brown University CSCI 0111 (Fall 2018)<br>
+Do you have feedback? Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUq1lb2cjMdCuUGDf3jAZcArEI7cldMwxLfYXdwYkbWxCXXQ/viewform">this form</a>.</p>
+</blockquote>
+
+    </div>
+  </div>
+</body>
+<script>
+// make links to wide web open in a new tab; id urls
+// will scroll instead of opening in new tab
+$('.stackedit__right a').map(function(a, b) {
+    b = $(b);
+    if (b.attr('href').includes('http')) {
+        b.attr('target', '_blank');
+    }
+});
+</script>
+</html>

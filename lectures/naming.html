@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>Structuring and Evaluating Code</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="scribble-custom.css" title="default"/><link rel="stylesheet" type="text/css" href="scribble-style.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="scribble-racket-lang-org"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_0&quot;);">&#9658;</a></td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Structuring and Evaluating Code</a></td></tr></table></div><div class="tocviewsublistonly" style="display: none;" id="tocview_0"><table cellspacing="0" cellpadding="0"><tr><td align="right">1&nbsp;</td><td><a href="#%28part._.Rules_for_.Composing_.Expressions%29" class="tocviewlink" data-pltdoc="x">Rules for Composing Expressions</a></td></tr><tr><td align="right">2&nbsp;</td><td><a href="#%28part._.Code_.Structure__.Emoji_code%29" class="tocviewlink" data-pltdoc="x">Code Structure:<span class="mywbr"> &nbsp;</span> Emoji code</a></td></tr><tr><td align="right">3&nbsp;</td><td><a href="#%28part._.How_.Programs_.Evaluate__.Ice_.Cream%29" class="tocviewlink" data-pltdoc="x">How Programs Evaluate:<span class="mywbr"> &nbsp;</span> Ice Cream</a></td></tr><tr><td align="right">4&nbsp;</td><td><a href="#%28part._.Expressions_versus_.Statements%29" class="tocviewlink" data-pltdoc="x">Expressions versus Statements</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.Structuring_and_.Evaluating_.Code%29" class="tocsubseclink" data-pltdoc="x">Structuring and Evaluating Code</a></td></tr><tr><td><span class="tocsublinknumber">1<tt>&nbsp;</tt></span><a href="#%28part._.Rules_for_.Composing_.Expressions%29" class="tocsubseclink" data-pltdoc="x">Rules for Composing Expressions</a></td></tr><tr><td><span class="tocsublinknumber">1.1<tt>&nbsp;</tt></span><a href="#%28part._.Types%29" class="tocsubseclink" data-pltdoc="x">Types</a></td></tr><tr><td><span class="tocsublinknumber">1.2<tt>&nbsp;</tt></span><a href="#%28part._.Types_.Guide_.Composition%29" class="tocsubseclink" data-pltdoc="x">Types Guide Composition</a></td></tr><tr><td><span class="tocsublinknumber">2<tt>&nbsp;</tt></span><a href="#%28part._.Code_.Structure__.Emoji_code%29" class="tocsubseclink" data-pltdoc="x">Code Structure:<span class="mywbr"> &nbsp;</span> Emoji code</a></td></tr><tr><td><span class="tocsublinknumber">3<tt>&nbsp;</tt></span><a href="#%28part._.How_.Programs_.Evaluate__.Ice_.Cream%29" class="tocsubseclink" data-pltdoc="x">How Programs Evaluate:<span class="mywbr"> &nbsp;</span> Ice Cream</a></td></tr><tr><td><span class="tocsublinknumber">3.1<tt>&nbsp;</tt></span><a href="#%28part._.What_does_the_.Run_button_do_%29" class="tocsubseclink" data-pltdoc="x">What does the <span class="stt">Run</span> button do?</a></td></tr><tr><td><span class="tocsublinknumber">4<tt>&nbsp;</tt></span><a href="#%28part._.Expressions_versus_.Statements%29" class="tocsubseclink" data-pltdoc="x">Expressions versus Statements</a></td></tr><tr><td><span class="tocsublinknumber">4.1<tt>&nbsp;</tt></span><a href="#%28part._.Key_.Takeaways%29" class="tocsubseclink" data-pltdoc="x">Key Takeaways</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><h2><a name="(part._.Structuring_and_.Evaluating_.Code)"></a>Structuring and Evaluating Code</h2><p>Copyright (c) 2017 Kathi Fisler</p><h3>1<tt>&nbsp;</tt><a name="(part._.Rules_for_.Composing_.Expressions)"></a>Rules for Composing Expressions</h3><p>In the last lecture, we saw that we can use expressions to build up
+larger expressions (this is called composition).  Some compositions
+are fine (like we saw in class with images), but others would not make
+sense, such as <span class="stt">above(3, circle(50, "solid", "red"))</span>. What
+distinguishes valid from invalid compositions?</p><h4>1.1<tt>&nbsp;</tt><a name="(part._.Types)"></a>Types</h4><p>In programming, values fall into categories called <span style="font-style: italic">types</span>.  We
+have seen three types so far: Numbers, Strings, and Images. Operations
+in a programming language are defined in terms of types: each
+operation works on some types and not others.  Furthermore, each
+operation <span style="font-style: italic">produces</span> a specific type of value. For example:</p><div class="itemtight"><ul><li><p>Multiplication works on numbers and produces a number</p></li><li><p><span class="stt">overlay</span> works on images and produces an image</p></li><li><p><span class="stt">overlay-xy</span> works on an image, two numbers, and an image and
+produces an image</p></li></ul></div><p>These descriptions can get verbose, so programming languages often
+have notation for the types on an operation.  If you look at
+<span class="stt">overlay-xy</span> in the Pyret documentation, for example, it shows:</p><p><table cellspacing="0" cellpadding="0"><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">overlay-xy :: (</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span><span class="hspace">&nbsp;&nbsp;</span><span class="stt">img1 :: Image,</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span><span class="hspace">&nbsp;&nbsp;</span><span class="stt">dx :: Number,</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span><span class="hspace">&nbsp;&nbsp;</span><span class="stt">dy :: Number,</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span><span class="hspace">&nbsp;&nbsp;</span><span class="stt">img2 :: Image</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">)</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">-&gt; Image</span></p></td></tr></table></p><p>This notation indicates that <span class="stt">overlay-xy</span> requires four inputs
+(an image, two numbers, and an image, in that order).  Each input has
+both a name (<span class="stt">img1</span>, <span class="stt">dx</span>, etc) and its type.  The names are
+usually at least somewhat descriptive, to help you remember what each
+input is. Otherwise the names aren&rsquo;t significant.</p><p>The arrow (<span class="stt">-&gt;</span>) shows what type the operation produces (in this
+case, an Image). The produced value isn&rsquo;t named, because the name of
+the operation suggests wahat the operation does.</p><p>For now, this notation isn&rsquo;t something you write.  It&rsquo;s just the
+notation you&rsquo;ll find in the documentation to know how to use an
+operation.</p><h4>1.2<tt>&nbsp;</tt><a name="(part._.Types_.Guide_.Composition)"></a>Types Guide Composition</h4><p>Types help us understand how we can compose expressions.
+Specifically, any expression that produces a value of a given type can
+be used as an input that expects that type.  The result of
+<span class="stt">overlay-xy</span>, for example, is an Image, and thus can be used for
+any operation that needs an Image (such as <span class="stt">above</span> or another use
+of <span class="stt">overlay-xy</span>).</p><p>As we introduce new operations, we will summarize their input and
+output types, so you can see how expressions build on one another.</p><h3>2<tt>&nbsp;</tt><a name="(part._.Code_.Structure__.Emoji_code)"></a>Code Structure: Emoji code</h3><p>We looked at <a href="emoji-code-formatting.txt">two versions</a> of
+a program to draw an emoji face. Our discussion focused on the
+following issues:</p><ul><li><p>The first may seem easier to read, since the result of each
+expression is named.</p></li><li><p>But the second may also seem easier to read because the
+indentation of subexpressions reveals the <span style="font-style: italic">structure of the
+computation itself</span>. Structuring computations is one of the major
+tasks in programming, and having your code reflect the structure of
+your solution is extremely useful when you (or someone else) has to
+read your code later.</p></li><li><p>Finding a balance between naming (to remember what pieces of a
+computation do) and nesting (for structure) is a big part of learning
+how to write good programs.  This is something you&rsquo;ll practice
+throughout the course.</p></li><li><p>There are no significant differences in efficiency between the
+two versions.</p></li></ul><h3>3<tt>&nbsp;</tt><a name="(part._.How_.Programs_.Evaluate__.Ice_.Cream)"></a>How Programs Evaluate: Ice Cream</h3><p>Imagine that you had the following contents in the definitions window
+(the one on the left):</p><p><table cellspacing="0" cellpadding="0"><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">include image</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">SCOOP-SIZE = 15</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">cone = flip-vertical(triangle(SCOOP-SIZE * 2, "solid", "tan"))</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">overlay-xy(circle(SCOOP-SIZE, "solid", "pink"),</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span><span class="hspace">&nbsp;&nbsp;</span><span class="stt">0, 25,</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span><span class="hspace">&nbsp;&nbsp;</span><span class="stt">overlay-xy(circle(SCOOP-SIZE, "solid", "green"),</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="stt">0, 25,</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="stt">cone))</span></p></td></tr></table></p><p>How will Pyret evaluate this program?</p><ul><li><p>Pyret processes the expressions one at a time from top to
+bottom</p></li><li><p>When Pyret encounters something of the form <span class="stt">name = expr</span>,
+it creates an entry in an internal <span style="font-style: italic">dictionary</span>.  The dictionary
+maps names to values.  Thus, Pyret evaluates the expression on the
+right of the <span class="stt">=</span>, then makes a dictionary entry to associate the
+name with that value.</p></li><li><p>When Pyret encounters an expression that has other expressions
+nested within it, it evaluates the sub-expressions from left-to-right
+and innermost to outermost.  Thus, in the <span class="stt">flip-vertical</span>
+expression (that creates the cone), the first expression to evaluate
+is <span class="stt">SCOOP-SIZE</span> (which Pyret looks up in the dictionary), then
+Pyret computes <span class="stt">15 * 2</span>, then it creates the triangle, then flips
+the triangle.</p><p>In the longer <span class="stt">overlay-xy</span> expression, the pink circle gets
+created before the green circle (by the left-to-right rule).</p></li></ul><p>You may have noticed that <span class="stt">SCOOP-SIZE</span> is all in caps, while
+<span class="stt">cone</span> is in lowercase.  Conceptually, <span class="stt">SCOOP-SIZE</span> is a
+key concept in the program (which we plan to use multiple times),
+whereas <span class="stt">cone</span> is just naming an intermediate computation for
+readability.  We use this naming convention to help us remember the
+respective roles of the names in the program.</p><h4>3.1<tt>&nbsp;</tt><a name="(part._.What_does_the_.Run_button_do_)"></a>What does the <span class="stt">Run</span> button do?</h4><p>When you press the <span class="stt">Run</span> button, Pyret erases the dictionary then
+re-processes the definitions window from the beginning.  Any
+dictionary entries that you made only in the interactions (right)
+window disappear.</p><h3>4<tt>&nbsp;</tt><a name="(part._.Expressions_versus_.Statements)"></a>Expressions versus Statements</h3><p>We&rsquo;ve already seen that there&rsquo;s a difference between</p><p><table cellspacing="0" cellpadding="0"><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">SCOOP-SIZE = 15</span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt"></span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;</span><span class="stt">SCOOP-SIZE * 2</span></p></td></tr></table></p><p>and their impact on the interactions window: the first adds to the
+dictionary, while the second displays a value. A piece of a program
+that changes how future expressions will evaluate is called a
+<span style="font-style: italic">statement</span>.  Creating a name meets this definition, since
+expressions will yield errors or not depending on whether a name
+appears in the dictionary.  <span style="font-style: italic">Expressions</span> perform computations
+without changing the information that Pyret maintains for running
+future expressions.</p><p>This distinction will become more meaningful later
+in the course, but we&rsquo;ll use the terminology to get used to it now.</p><h4>4.1<tt>&nbsp;</tt><a name="(part._.Key_.Takeaways)"></a>Key Takeaways</h4><p>The theme of this segment is <span style="font-style: italic">how code can reflect the structure
+of data or computations</span>.  The structure of an image is reflected in
+which smaller images you use to create it; the structure of a
+computation is reflected in which operations you choose and how you
+nest them.  Computer scientists look for structure in data and
+problems, then capture that structure in code so others can see what
+structure they had in mind.</p></div></div><div id="contextindicator">&nbsp;</div></body></html>

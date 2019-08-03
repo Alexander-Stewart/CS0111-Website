@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyret Style Design and Testing Guide</title>
+  <script
+  src="jquery.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
+  <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+  	body {
+  		background-color: #f8f8f8;
+	}
+  </style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#pyret-testing-design-and-clarity-guide">Pyret Testing Design and Clarity Guide</a>
+<ul>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#design">Design</a></li>
+<li><a href="#clarity">Clarity</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="pyret-testing-design-and-clarity-guide">Pyret Testing Design and Clarity Guide</h1>
+<h2 id="testing">Testing</h2>
+<ol>
+<li>All functions require examples/test cases, including helper functions. Functions that output images require examples; all other functions require test cases.</li>
+<li>Examples/test cases should reflect various input scenarios so that you exercise the possible main behaviors of your function</li>
+<li>Even if your function does not work as expected, you can still write examples/test cases for it and receive full testing credit.</li>
+</ol>
+<p>Example of good testing:</p>
+<pre><code>fun abs-val(x :: Number) -&gt; Number:
+  doc: "Give the absolute value of the input number"
+  ... # i never figured this function out
+where:
+  abs-val(-4) is 4 # test the first branch of the if
+  abs-val(0) is 0  # 0 is an "edge case"
+  abs-val(3) is 3  # test the else branch of the if
+end
+</code></pre>
+<p>A handin with this work would receive full testing points.</p>
+<h2 id="design">Design</h2>
+<ol>
+<li>Use constants where appropriate. <code>rectangle(500, 300, "solid", "green")</code> should be rewritten to:<pre><code>width = 500
+rectangle(width, 3/5 * width, "solid", "green")
+</code></pre>
+</li>
+<li>Use helper functions where appropriate.<pre><code>stairs = beside-align("bottom", rectangle(50, 50, "solid", "gray"),
+ beside-align("bottom", rectangle(50, 100, "solid", "gray"),
+   beside-align("bottom", rectangle(50, 150, "solid", "gray"),
+     rectangle(50, 200, "solid", "gray"))))
+</code></pre>
+</li>
+</ol>
+<p>could be rewritten as:</p>
+<pre><code>stair-width = 50
+fun stair(height :: Number) -&gt; Image:
+  doc: "make an individual stair given its height"
+  rectangle(stair-width, height, "solid", "gray")
+end
+
+stairs = beside-align("bottom", stair(50),
+  beside-align("bottom", stair(100),
+    beside-align("bottom", stair(150), stair(200))))
+</code></pre>
+<ol start="3">
+<li>Make sure your helper functions and constants are not redundant.<br>
+There is no point in making this function:<pre><code>fun string-lower(s :: String) -&gt; String:
+  string-to-lower(s)
+end
+</code></pre>
+since you could always use <code>string-to-lower</code> instead.</li>
+</ol>
+<h2 id="clarity">Clarity</h2>
+<ol>
+<li>
+<p>Write docstrings for all functions, including helper and nested functions.<br>
+A good docstring gives a qualitative description of the function, including its input(s) and output.</p>
+</li>
+<li>
+<p>Give constants and helper functions useful names.</p>
+<pre><code>n1 = 3.1415
+n2 = 500
+n3 = 30
+fun helper(x):
+  x + 3
+end
+</code></pre>
+<p>should be rewritten as (for example)</p>
+<pre><code>pi = 3.1415
+flag-width = 500
+circle-radius = 30
+fun add-3(x):
+  x + 3
+end
+</code></pre>
+</li>
+<li>
+<p>All functions require type annotations on both inputs and output.</p>
+</li>
+<li>
+<p>Names of constants and functions should be lower case and dash separated. For configuration constants (for example the height of a character) it is acceptable to use all caps dash-separated names.</p>
+<pre><code># Good Pyret Style:
+flag-width = 500
+width-to-height-ratio = 3/5
+CHARACTER-HEIGHT = 40
+
+# Bad Pyret Style:
+flag_width = 500
+widthHeightRatio = 3/5
+CharacterHeight = 40
+</code></pre>
+</li>
+<li>
+<p>Keep lines under 80 characters. You will at some point see a vertical dashed blue line in Pyret.<br>
+<img src="https://puu.sh/BvZrw/3d30ea2258.png" alt="img" width="200" height="300"></p>
+<p>If you see this line, your lines are too long and you need to add linebreaks (press <code>enter</code> at places in your code).</p>
+<p>The 80 character limit applies even when you have long strings and/or docstrings. Long docstrings can be written using the backtick (`) button:</p>
+<pre><code>fun f()
+  doc: ``` this is a really
+       long docstring, I don't know
+       what the point is but... at least it's
+       under 80 characters :) ```
+  2
+end
+</code></pre>
+</li>
+<li>
+<p>Indent your code properly. You can do this by pressing <code>ctrl-a</code> then <code>tab</code> on Windows and Linux, or <code>cmd-a</code> then <code>tab</code> on Mac.</p>
+</li>
+</ol>
+
+    </div>
+  </div>
+</body>
+<script>
+// make links to wide web open in a new tab; id urls
+// will scroll instead of opening in new tab
+$('.stackedit__right a').map(function(a, b) {
+    b = $(b);
+    if (b.attr('href').includes('http')) {
+        b.attr('target', '_blank');
+    }
+});
+if ($(window).width() < 720) {
+
+}
+</script>
+</html>

@@ -1,0 +1,26 @@
+[{
+    "Project": { "name": "Project 1: Taxis Through the Haze", "link": "projects/Project-1.html" },
+    "Out": "Oct 3",
+    "In": "Oct 16",
+    "Support Docs": [{ "name": "---", "link": null }],
+    "Display": true
+},
+{
+    "Project": { "name": "Project 2: Mystical Magical Maze", "link": "projects/Project-2.html" },
+    "Out": "Oct 24",
+    "In": "Nov 6",
+    "Support Docs": [{ "name": "Design Check Solutions", "link": "https://canvas.brown.edu/courses/1076211/files?preview=61698920" }],
+    "Display": true
+},
+{
+    "Project": { "name": "Project 3: Books for Days", "link": "projects/Project-3.html" },
+    "Out": "Nov 28",
+    "In": "Dec 11",
+    "Support Docs": [
+        { "name": "Installation Instructions", "link": "projects/project-3-installation.html" },
+        { "name": "Python Hints", "link": "projects/python-hints.html"},
+        { "name": "Additional Functionality", "link": "projects/additional-functionality.html"},
+        { "name": "Design Check Solutions", "link": "https://canvas.brown.edu/courses/1076211/files?preview=61757971"}
+    ],
+    "Display": true
+}]

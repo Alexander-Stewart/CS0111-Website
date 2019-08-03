@@ -1,0 +1,782 @@
+[
+  {
+    "Date": "Sep 5th", 
+    "Display": true, 
+    "Lecture Capture": {"name": "video", "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2e9a4e7b-7980-4cbf-8349-a9520153ad86"}, 
+    "Readings": [], 
+    "Summary": [{"name": "Notes", "link": "course-overview.html"}], 
+    "Topic": "Course Overview"
+  }, 
+  {
+    "Date": "Sep 7th", 
+    "Display": true, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "video"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "nums-strings-images.html", 
+        "name": "notes"
+      }
+    ], 
+    "Topic": "Expressions and Building Images"
+  }, 
+  {
+    "Date": "Sep 10th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Naming, Running, Functions Introduction"
+  }, 
+  {
+    "Date": "Sep 12th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Expressions, Numbers, Images"
+  }, 
+  {
+    "Date": "Sep 14th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Conditionals and Booleans"
+  }, 
+  {
+    "Date": "Sep 17th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "NM for functions and conditionals"
+  }, 
+  {
+    "Date": "Sep 19th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Decomposing Problems into Functions"
+  }, 
+  {
+    "Date": "Sep 21st", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Guest Lecture - Michael Littman"
+  }, 
+  {
+    "Date": "Sep 24th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Introduction to Tables"
+  }, 
+  {
+    "Date": "Sep 26th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Operating on Tables; Tables NM"
+  }, 
+  {
+    "Date": "Sep 28th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Graphs and Plots"
+  }, 
+  {
+    "Date": "Oct 1st", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Structuring Table Computations"
+  }, 
+  {
+    "Date": "Oct 3rd", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Errors and Pitfalls with Tables"
+  }, 
+  {
+    "Date": "Oct 5th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "More on Data"
+  }, 
+  {
+    "Date": "Oct 10th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Transactions"
+  }, 
+  {
+    "Date": "Oct 12th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Extracting Columns"
+  }, 
+  {
+    "Date": "Oct 15th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "ML/Interpretation I"
+  }, 
+  {
+    "Date": "Oct 17th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "ML/Interpretation II"
+  }, 
+  {
+    "Date": "Oct 19th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Introduction to Lists"
+  }, 
+  {
+    "Date": "Oct 22nd", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Processing Lists"
+  }, 
+  {
+    "Date": "Oct 24th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Sorting Lists"
+  }, 
+  {
+    "Date": "Oct 26", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Data Design with Lists and Tables"
+  }, 
+  {
+    "Date": "Oct 29th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Defining your own data types"
+  }, 
+  {
+    "Date": "Oct 31st", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Tables' limitation 1 - Mixed Data"
+  }, 
+  {
+    "Date": "Nov 2nd", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Tables' limitation 2 - Trees"
+  }, 
+  {
+    "Date": "Nov 5th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Searching: Binary Search Trees"
+  }, 
+  {
+    "Date": "Nov 7th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Introduction to Python: Basic functions"
+  }, 
+  {
+    "Date": "Nov 9th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Lists in Python"
+  }, 
+  {
+    "Date": "Nov 12th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Testing in Python"
+  }, 
+  {
+    "Date": "Nov 14th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Loops"
+  }, 
+  {
+    "Date": "Nov 16th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Creating data"
+  }, 
+  {
+    "Date": "Nov 19th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Updating data; revised NM"
+  }, 
+  {
+    "Date": "Nov 26th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Hashtables"
+  }, 
+  {
+    "Date": "Nov 28th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Data design with Hashtables"
+  }, 
+  {
+    "Date": "Nov 30th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Searching with Hashtables"
+  }, 
+  {
+    "Date": "Dec 3rd", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "TBD"
+  }, 
+  {
+    "Date": "Dec 5th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "TBD"
+  }, 
+  {
+    "Date": "Dec 7th", 
+    "Display": false, 
+    "Lecture Capture": {
+      "link": null, 
+      "name": "---"
+    }, 
+    "Readings": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Summary": [
+      {
+        "link": null, 
+        "name": "---"
+      }
+    ], 
+    "Topic": "Can Robots Take Over Coding?"
+  }
+]

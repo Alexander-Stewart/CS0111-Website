@@ -1,0 +1,61 @@
+<div id="staff-wrapper">
+    <h2>Professor and HTAs</h2>
+    <div class="person-container"><img id="kathi" src="../assets/img/kathi-char.png" class="staff-pic" /><strong>Professor Kathi Fisler</strong>
+        <div class="cs-login"><a href="mailto:kathi@cs.brown.edu">kathi</a></div>
+        <div class="birthday">Kathi's Birthday</div>
+        <p class="bio-text">Kathi's Bio</p>
+    </div>
+    <div class="person-container">
+        <img id="eberkowi" src="../assets/img/eberkowi-char.png" class="staff-pic" />
+        <strong>Elias Berkowitz</strong>
+        <div class="cs-login"><a href="mailto:eberkowi@cs.brown.edu">eberkowi</a></div>
+        <div class="birthday">Eli's Birthday</div>
+        <p class="bio-text">Eli's Bio</p>
+    </div>
+    <div class="person-container"><img id="hprecel" src="../assets/img/hprecel-char.png" class="staff-pic" /><strong>Heila Precel</strong>
+        <div class="cs-login"><a href="mailto:hprecel@cs.brown.edu">hprecel</a></div>
+        <div class="birthday">Heila's Birthday</div>
+        <p class="bio-text">Heila's Bio</p>
+    </div>
+    <div class="person-container"><img id="jpattiz" src="../assets/img/jpattiz-char.png" class="staff-pic" /><strong>Josh Pattiz</strong>
+        <div class="cs-login"><a href="mailto:jpattiz@cs.brown.edu">jpattiz</a></div>
+        <div class="birthday">Josh's Birthday</div>
+        <p class="bio-text">Josh's Bio</p>
+    </div>
+    <h2>Undergraduate TAs</h2>
+    <div class="person-container"><img id="ali62" src="../assets/img/ali62-char.png" class="staff-pic" /><strong>Amy Li</strong>
+        <div class="cs-login"><a href="mailto:ali62@cs.brown.edu">ali62</a></div>
+        <div class="birthday">Amy's Birthday</div>
+        <p class="bio-text">Amy's Bio</p>
+    </div>
+    <div class="person-container"><img id="jwindha1" src="../assets/img/jwindha1-char.png" class="staff-pic" /><strong>Julia Windham</strong>
+        <div class="cs-login"><a href="mailto:jwindha1@cs.brown.edu">jwindha1</a></div>
+        <div class="birthday">Julia's Birthday</div>
+        <p class="bio-text">Julia's Bio</p>
+    </div>
+    <div class="person-container"><img id="lryu" src="../assets/img/lryu-char.png" class="staff-pic" /><strong>Leo Ryu</strong>
+        <div class="cs-login"><a href="mailto:lryu@cs.brown.edu">lryu</a></div>
+        <div class="birthday">Leo's birthday</div>
+        <p class="bio-text">Leo's Bio</p>
+    </div>
+    <div class="person-container"><img id="ncheng2" src="../assets/img/ncheng2-char.png" class="staff-pic" /><strong>Nicole Cheng</strong>
+        <div class="cs-login"><a href="mailto:ncheng2@cs.brown.edu">ncheng2</a></div>
+        <div class="birthday">Nicole's birthday</div>
+        <p class="bio-text">Nicole's Bio</p>
+    </div>
+    <div class="person-container"><img id="ndo3" src="../assets/img/ndo3-char.png" class="staff-pic" /><strong>Nam Do</strong>
+        <div class="cs-login"><a href="mailto:ndo3@cs.brown.edu">ndo3</a></div>
+        <div class="birthday">Oct 14</div>
+        <p class="bio-text">Nam's Bio</p>
+    </div>
+    <div class="person-container"><img id="rjha" src="../assets/img/rjha-char.png" class="staff-pic" /><strong>Rohan Jha</strong>
+        <div class="cs-login"><a href="mailto:rjha@cs.brown.edu">rjha</a></div>
+        <div class="birthday">Rohan's Birthday</div>
+        <p class="bio-text">Rohan's Bio</p>
+    </div>
+    <div class="person-container"><img id="vtiourin" src="../assets/img/vtiourin-char.png" class="staff-pic" /><strong>Valeria Tiourinha</strong>
+        <div class="cs-login"><a href="mailto:vtiourin@cs.brown.edu">vtiourin</a></div>
+        <div class="birthday">Valeria's Birthday</div>
+        <p class="bio-text">Valeria's Bio</p>
+    </div>
+</div>

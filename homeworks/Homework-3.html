@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 3</title>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+  	body {
+  		background-color: #f8f8f8;
+	}
+  </style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#homework-3-vacation-to-venus">Homework 3: Vacation to Venus</a>
+<ul>
+<li><a href="#handin">Handin</a></li>
+<li><a href="#the-assignment">The Assignment</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="homework-3-vacation-to-venus">Homework 3: Vacation to Venus</h1>
+<p><img src="https://thumbs.dreamstime.com/b/kawaii-space-card-doodle-pretty-facial-expression-illustration-cartoon-venus-starry-sky-70693058.jpg" alt="enter image description here" width="350"></p>
+<h2 id="handin">Handin</h2>
+<p>After completing the homework, you will submit:</p>
+<ul>
+<li>
+<p><code>safety.arr</code></p>
+</li>
+<li>
+<p><code>calculate-rate.arr</code></p>
+</li>
+<li>
+<p><code>sunset.arr</code></p>
+</li>
+</ul>
+<p>Hand in your work at this <a href="https://goo.gl/forms/Fkr461qrsm27iZnP2">Google Form</a> (<a href="https://goo.gl/forms/Fkr461qrsm27iZnP2">https://goo.gl/forms/Fkr461qrsm27iZnP2</a>).</p>
+<h2 id="the-assignment">The Assignment</h2>
+<h3 id="landing-on-venus">Landing on Venus</h3>
+<p>Is it safe? After landing on Venus, you have to make sure that the surface conditions are safe for you to leave the spaceship. There are two main things you have to check: atmosphere and weather.</p>
+<p>Write a function <code>is-planet-safe</code>, which takes in a String representing the gas in the atmosphere, a Number representing the current temperature, and a Number representing the pressure on the planet, and returns <code>“safe”</code> if it is safe to leave the spaceship, <code>"warning"</code> if we should be careful, and <code>“dangerous!”</code> if not.</p>
+<p>It is safe to leave the spaceship if <em>all</em> of the following are true:</p>
+<ul>
+<li>
+<p>The gas in the atmosphere is “oxygen” or “hydrogen”</p>
+</li>
+<li>
+<p>The temperature on the planet is between 20 and 110 degrees</p>
+</li>
+<li>
+<p>The pressure on the planet is between 0.5 and 3 atmospheres</p>
+</li>
+</ul>
+<p>We have special space suits that enable us to tolerate extreme environments, so if only one of these conditions is false, the function should return <code>"warning"</code>: we can leave the ship, but we need to watch out. If more than one condition is false, we need to stay inside, and the function should return <code>"dangerous"</code>!</p>
+<p>Copy this header for <code>is-planet-safe</code> into a file called <code>safety.arr</code>, and then complete the function as described:</p>
+<pre><code>
+fun is-planet-safe(atmosphere :: String, temp :: Number, pressure :: Number) -&gt; String:
+
+     ...
+
+end
+
+</code></pre>
+<p>Hints:</p>
+<ul>
+<li>You will probably want an if expression to decide which String to return! Generally, if you only need to return a boolean you can use ands and ors, but when you need to return something else you will needs if.</li>
+</ul>
+<h3 id="interplanetary-calls">Interplanetary Calls</h3>
+<p>Heila likes to call Eli on Mars, but unfortunately Verizon’s coverage in space is pretty expensive. She wrote some code to help her calculate the rates for each call; help her clean up her code!</p>
+<p>Heila wrote the function calculate-rate, which takes in the number of minutes that she’ll spend on the call and returns the cost of the call.</p>
+<pre><code>
+fun calculate-rate(minutes):
+  low-minutes-cost = 5
+  medium-minutes-cost = 10
+  high-minutes-cost = 15
+  if ((minutes &gt;= 0) and (minutes &lt; 10)):
+    (minutes / (low-minutes-cost / 12)) * (10 + (minutes * 3))
+  else if ((minutes &gt;= 11) and (minutes &lt; 20)):
+    (minutes / (medium-minutes-cost / 12)) * (10 + (minutes * 3))
+  else if (minutes &gt;= 20) :
+    (minutes / (high-minutes-cost / 12)) * (10 + (minutes * 3))
+  end
+where:
+  calculate-rate(12) is 662.4
+end
+</code></pre>
+<p>Help Heila clean up her code by making the following improvements:</p>
+<ol>
+<li>Add type annotations,</li>
+<li>Add docstrings,</li>
+<li>Write more thorough test cases, and</li>
+<li>Clean up the code as you see fit. In particular, there are some instances of repetition!</li>
+</ol>
+<h3 id="the-sun-sets-on-heila">The Sun Sets on Heila</h3>
+<p>It’s been great hanging out on Venus with Heila, buts it’s time to move on. Before you leave, you want to experience a beautiful sunset with Heila. Unfortunately, days on Venus last 243 Earth days, so you would have to hang out for a long time! Instead, you will code a simulated sunset!</p>
+<p>Copy the sample code below into a new pyret file called sunset.arr to get started.</p>
+<pre><code>HEIGHT = 250
+WIDTH = 400
+RADIUS = HEIGHT * 0.1
+bg-url = "https://cs.brown.edu/courses/csci0111/data/hw3-sunset-bg.png"
+SKY = scale(5/7, image-url(bg-url))
+fun drop-sun(sun-pos :: Number):
+  ...
+end
+
+fun sun-color(sun-pos :: Number) -&gt; String:
+  ...
+end
+
+fun draw-sun(sun-pos :: Number) -&gt; Image:
+  place-image(circle(RADIUS, "solid", sun-color(sun-pos)), WIDTH / 2, sun-pos, SKY)
+end
+
+sunset = reactor:
+  init: 0,
+  on-tick: drop-sun,
+  to-draw: draw-sun
+end
+
+interact(sunset)
+</code></pre>
+<p>Draw-sun should draw the sun, but the colors should change to reflect the sun’s setting. The sun should set by continually increasing its position in drop-sun, but this should also vary based on the location of the sun. Specifically, the sun should be a circle with a radius of RADIUS. When the sun’s position is between 0 and 60% (<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\ge 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">0</span></span></span></span></span>, <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>&amp;lt;</mo><mn>60</mn></mrow><annotation encoding="application/x-tex">&amp;lt;60</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.5782em; vertical-align: -0.0391em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">6</span><span class="mord">0</span></span></span></span></span>) of the height of the sky (HEIGHT), the sun should move down 2 per tick and should be drawn in yellow. When the sun’s position is between 60 and 95% (<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo><mn>60</mn></mrow><annotation encoding="application/x-tex">\ge60</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">6</span><span class="mord">0</span></span></span></span></span>, <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>&amp;lt;</mo><mn>95</mn></mrow><annotation encoding="application/x-tex">&amp;lt;95</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.5782em; vertical-align: -0.0391em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">9</span><span class="mord">5</span></span></span></span></span>) of HEIGHT, the sun should move down 1 per tick and should be drawn in orange. When the sun’s position is more than 95%  (<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo><mn>95</mn></mrow><annotation encoding="application/x-tex">\ge 95</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">9</span><span class="mord">5</span></span></span></span></span>) of HEIGHT, the sun should not move at all and should be drawn in red.</p>
+<p><strong>Clarification (added Friday Sep 21):</strong> Whether or not the boundaries of the height percentages are inclusive or exclusive has been added.</p>
+<p>Remember that the coordinate system used by Pyret starts at the upper left, so as the sun “sets”, its position will actually be <em>increasing.</em></p>
+<p>Remember that you can run the file to see your animation!</p>
+
+    </div>
+  </div>
+</body>
+<script>
+// make links to wide web open in a new tab; id urls
+// will scroll instead of opening in new tab
+$('.stackedit__right a').map(function(a, b) {
+    b = $(b);
+    if (b.attr('href').includes('http')) {
+        b.attr('target', '_blank');
+    }
+});
+</script>
+</html>

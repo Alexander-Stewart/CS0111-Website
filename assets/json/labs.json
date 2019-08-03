@@ -1,0 +1,155 @@
+[{
+    "Lab": { "name": "Lab 1", "link": "labs/lab1.html" },
+    "Week": "1",
+    "Additional Materials": [
+	    {
+		    "name": "Presentation", 
+		    "link": "https://docs.google.com/presentation/d/1BAGJDzHrZNIEPFDuISY5rmglB3PnJJ9zlNvI2bIQD7M/edit?usp=sharing"
+	    },
+	    {
+		    "name": "Solution",
+		    "link": "https://code.pyret.org/editor#share=1z-JfwY7F66rQoDJN-UrfW0D0Vxt3cH6z&v=be0f222"
+	    }],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 2", "link": "labs/lab2.html" },
+    "Week": "2",
+    "Additional Materials":[
+	    {
+	    	"name": "Presentation", 
+	    	"link": "https://docs.google.com/presentation/d/1uORMAXD87fHXCvPWb6g_1dju23XkYbo9SrsKvE6Ms_I/edit?usp=sharing"
+	    },
+	    {
+		"name": "Solution",
+		"link": "https://code.pyret.org/editor#share=18Fk6WURxfvzRtR-v-dI3Y9fi-TFeGTN5&v=be0f222"	
+	    }
+    ],
+    "Display": true
+},{
+    "Lab": { "name": "Lab 3", "link": "labs/lab3.html" },
+    "Week": "3",
+    "Additional Materials":[
+	    {
+	    	"name": "Presentation", 
+	    	"link": "https://docs.google.com/presentation/d/11Jn58uQ1pYPSJxkoD8mEsPVO9KDVrHsghswzqcBcYUA/edit?usp=sharing"
+	    },
+	    {
+		"name": "Solution",
+		"link": "https://code.pyret.org/editor#share=1fOcLEo8IfcU_R-y959Yi2EDsOXtqCNKv&v=be0f222"	
+	    }
+
+    ],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 4", "link": "labs/lab4.html" },
+    "Week": "4",
+    "Additional Materials":[
+	    {
+	    	"name": "Presentation", 
+	    	"link": "https://docs.google.com/presentation/d/1nfg9UYAmGekPx382uIWIEFz649cm9Up5NJSf2m0MWK4/edit#slide=id.g3bf3ca3d66142725_5"
+	    },
+	    {
+		"name": "Solution",
+		"link": "https://code.pyret.org/editor#share=18Ld501Ig0KmXVMDxo9Mm-ra1xeyTvXnU&v=be0f222"	
+	    }
+
+    ],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 5", "link": "labs/lab5.html" },
+    "Week": "5",
+    "Additional Materials":[
+	    {
+		"name": "Presentation",
+		"link": "https://docs.google.com/presentation/d/1dD9akMs1gxeBPfXZd8ChKw2nR2uEewiZ8zQKkly-6P8/edit?usp=sharing"
+	    },
+	    {
+		"name": "Providence Map",
+		"link": "http://cs.brown.edu/courses/csci0111/assets/img/lab5-map.png"
+	    },
+	    {
+		"name": "Solution",
+		"link": "https://code.pyret.org/editor#share=1DuegKzLPK4JNOtPjvqKctGRNlEl71Om3&v=be0f222"
+	    }
+
+    ],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 6", "link": "labs/lab6.html" },
+    "Week": "6",
+    "Additional Materials": [
+	    {
+		    "name": "Solution",
+		    "link": "https://code.pyret.org/editor#share=110Iok-8Nw8YcDwwNcutFKnFqR16JH_GI&v=be0f222"
+	    }],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 7", "link": "labs/lab7.html" },
+    "Week": "7",
+    "Additional Materials": [
+	    {
+		    "name": "Functions & Dictionaries",
+		    "link": "https://docs.google.com/presentation/d/1ICAQu0cgFVfi8jy6Prf6sJA60eU4secpSClSqCl5urY/edit?usp=sharing"
+	    },
+	    {
+		    "name": "Solution",
+		    "link": "https://code.pyret.org/editor#share=1HzOPTkUMx5lOAKJqzu5J1cJTjXVUu4jA&v=be0f222"
+	    }
+    ],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 8", "link": "labs/lab8.html" },
+    "Week": "8",
+    "Additional Materials":[
+    ],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 9", "link": "labs/lab9.html" },
+    "Week": "9",
+    "Additional Materials":[
+	    {
+		    "name": "Solution",
+		    "link": "labs/lab9sol.html"
+	    }
+    ],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 10", "link": "labs/lab10.html" },
+    "Week": "10",
+    "Additional Materials":[
+	    {
+		    "name": "Solution",
+		    "link": "labs/lab10sol.html"
+	    }
+    ],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 11", "link": "labs/lab11.html" },
+    "Week": "11",
+    "Additional Materials":[
+	{
+		"name": "Solution",
+		"link": "labs/lab11sol.html"
+	}
+		],
+    "Display": true
+},
+{
+    "Lab": { "name": "Lab 12", "link": "labs/lab12.html" },
+    "Week": "12",
+    "Additional Materials":[
+	{
+		"name": "puppy.jpg (Pillow section)",
+		"link": "http://cs.brown.edu/courses/csci0111/assets/img/puppy.jpg"
+	}],
+    "Display": true
+}]

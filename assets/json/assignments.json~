@@ -1,0 +1,92 @@
+[
+    {
+	"Week": "0",
+	"Assignment": { "name": "Surveys and Signups", "link": null },
+	"Type": "---",
+	"Out": "Sept 5",
+	"In": "Sept 9",
+	"Display": true,
+	"Support Docs": [{ "name": "Background Survey", "link": "https://docs.google.com/forms/d/e/1FAIpQLSeKAJdReTva2JP3JxR0HnxeKfuOL_B8um7gj8GZE-0aTIFFuw/viewform?usp=sf_link"},
+			 { "name": "Piazza Signup", "link": "https://piazza.com/brown/fall2018/fall2018csci0111s01"  },
+			 { "name": "Data Thinking Survey", "link": "https://canvas.brown.edu/courses/1076211/quizzes/1520076"},
+             { "name": "Lab Signup", "link": "https://goo.gl/forms/o8Uihog027V91cur2" },
+             { "name": "Collaboration and Policies Contract", "link": "https://goo.gl/forms/uxVoQhwXknPuzJUu1" }],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "1",
+	"Assignment": { "name": "Flags", "link": "https://cs.brown.edu/courses/csci0111/pages/Homework-1.html" },
+	"Type": "---",
+	"Out": "Sept 7",
+	"In": "Sept 11",
+	"Display": true,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "---",
+	"Assignment": { "name": "---", "link": "https://www.google.com" },
+	"Type": "---",
+	"Out": "---",
+	"In": "---",
+	"Display": false,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    }, {
+	"Week": "---",
+	"Assignment": { "name": "---", "link": "https://www.google.com" },
+	"Type": "---",
+	"Out": "---",
+	"In": "---",
+	"Display": false,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    }, {
+	"Week": "---",
+	"Assignment": { "name": "---", "link": "https://www.google.com" },
+	"Type": "---",
+	"Out": "---",
+	"In": "---",
+	"Display": false,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    }, {
+	"Week": "---",
+	"Assignment": { "name": "---", "link": "https://www.google.com" },
+	"Type": "---",
+	"Out": "---",
+	"In": "---",
+	"Display": false,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    }, {
+	"Week": "---",
+	"Assignment": { "name": "---", "link": "https://www.google.com" },
+	"Type": "---",
+	"Out": "---",
+	"In": "---",
+	"Display": false,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "---",
+	"Assignment": { "name": "---", "link": "https://www.google.com" },
+	"Type": "---",
+	"Out": "---",
+	"In": "---",
+	"Display": false,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    },
+    {
+	"Week": "---",
+	"Assignment": { "name": "---", "link": "https://www.google.com" },
+	"Type": "---",
+	"Out": "---",
+	"In": "---",
+	"Display": false,
+	"Support Docs": [{ "name": "---", "link": null }],
+	"Solutions": { "name": "---", "link": null }
+    }
+]

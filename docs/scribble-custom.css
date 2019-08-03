@@ -1,0 +1,19 @@
+.itemtight li p {
+    margin: 0;
+    padding: 3px;
+}
+
+.emphbox {
+    margin-left: 20pt;
+    margin-right: 20pt;
+    background-color: lightgray;
+    padding: 3px
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.maincolumn {
+    width: 50em;
+}
