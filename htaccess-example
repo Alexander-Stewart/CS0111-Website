@@ -1,0 +1,12 @@
+# If you want to deny web-viewing access to an entire directory,
+# copy these lines to dirname/.htaccess
+
+order deny,allow
+deny from all
+allow from 127.0.0.1
+
+# If you want to allow viewing a list of files in a directory
+# when visiting it, copy this line in
+
+Options +Indexes
+
