@@ -6,7 +6,6 @@ $(document).ready(function() {
 
         $("#sidebar-open").click(function() {
             $("#sidebar").toggleClass('opened');
-
         });
     });
 
@@ -28,3 +27,35 @@ var loadReuseable = function() {
     //$("#header-wrapper").load("partials/header.html");
     //$("#footer-wrapper").load("partials/footer.html");
 };
+
+const sidebarSlide = () => {
+    const menuButton = document.querySelector('.menu-button');
+    const sidebar = document.querySelector('#sidebar');
+    const navButtons = document.querySelectorAll("#sidebar div");
+
+    // Open menu.
+    menuButton.addEventListener('click', () => {
+        sidebar.style.transform = (sidebar.style.transform == "none") ? "translateX(100%)" : "none";
+
+        // Animate links.
+        navButtons.forEach((link, index) => {
+            console.log(index);
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navButtonFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+    });
+
+    // Reset upon resize
+    window.addEventListener("resize", function(){
+        console.log(window.innerWidth);
+        if (window.innerWidth > 785) {
+            console.log("Resetting navbar...");
+            sidebar.removeAttribute("style");
+        }
+    });
+}
+
+sidebarSlide();
