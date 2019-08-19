@@ -6,3 +6,18 @@
     overflow-y: scroll;
     padding: 0px 24px 24px 24px;
 }
+
+#documents-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#documents-image {
+    width: 50%;
+    height: auto;
+}
+
+#documents-top-content {
+    display: inline-block;
+    flex: 1;
+}
