@@ -99,7 +99,6 @@ a:hover {
 #inner-content {
     background-color: #FEFBEA;
     border: 20px solid #FFD8AF;
-    height: 100%;
     width: 100%;
 }
 
@@ -293,10 +292,36 @@ th {
     text-align: left;
 }
 
+#staff-mega-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .staff-pic {
     width: 250px;
     height: 250px;
     display: block;
+    background-color: black;
+}
+
+.staff-pic-wrapper {
+    width: 310px;
+    min-height: 335px;
+    background-color: #f9f5ec;
+    border: 30px solid #f9f5ec;
+    border-bottom: 5px solid #f9f5ec;
+    display: block;
+}
+
+.staff-pic-text {
+    overflow-wrap: all;
+    font-size: 20pt; 
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .person-container {
@@ -327,9 +352,10 @@ p {
 
 .staff-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-self: auto;
+  text-align: center;
 }
 
 .row-wrapper {
@@ -354,7 +380,7 @@ p {
 
 #content-tab-bottom-home {
     content: "";
-    height: 100vh;
+    height: 85vh;
     width: 100px;
     display: block;
     position: absolute;
