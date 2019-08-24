@@ -7,24 +7,35 @@ body {
     font-size: 15px;
 }
 
+index-nav{
+  border-color: black;
+}
+
 a.nav-button {
-    background-color: black !important;
-    border-bottom: none !important;
+    background-color: #F9C28C!important;
+    /* border-bottom: none !important; */
 }
 
 .nav-button {
+    /* margin-right: 10px; */
+    margin-left: 4px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    /* border-bottom: 10px; */
+    border-color: grey;
+    width: 90px;
     padding: 10px;
     display: inline-block;
     text-align: center;
     float: left;
-    color: white !important;
+    color: black !important;
 }
 
 a.nav-button:hover {
     color: #fff4e2 !important;
-    background-color: #b57713 !important;
+    /* background-color: #b57713 !important; */
     text-decoration: none !important;
-    border-bottom: none !important;
+     border-bottom: none !important;
 }
 
 h1 {
@@ -77,6 +88,7 @@ a:hover {
 @media (max-width: 785px) {
     #sidebar {
         display: flow-root !important;
+
     }
     body {
         padding-left: 0 !important;
@@ -111,9 +123,20 @@ a:hover {
     }
 }
 
+.content-outline{
+   background-color: #F9C28C;
+   padding: 1%;
+   border-radius: 10px;
+}
+.content-border{
+  margin: 10px;
+  padding: 1%;
+  /* background-color: #FFD8AF !important; */
+  background-color: #FEFBEA!important;
+}
 .content-wrapper {
-  margin-left: 1% auto;
-  margin-right: 1% auto;
+  margin: 10px;
+  background-color: #FEFBEA!important;
 }
 
 @media (min-width: 786px) {
@@ -121,7 +144,7 @@ a:hover {
         display: block;
         overflow: hidden;
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
     #sidebar-open {
       display: hidden;
@@ -133,11 +156,13 @@ a:hover {
 }
 
 #assignments-body {
-    background-image: url("../img/assignments-background.jpg");
+  background-image: url("../img/general-background.jpeg");
+  background-size: stretch;
 }
 
 #lectures-body {
-    background-image: url("../img/lectures-background.jpg");
+  background-image: url("../img/general-background.jpeg");
+  background-size: stretch;
 }
 
 #staff-body {
@@ -145,7 +170,8 @@ a:hover {
 }
 
 #labs-body {
-    background-image: url("../img/labs-background.jpg");
+    background-image: url("../img/general-background.jpeg");
+    background-size: stretch;
 }
 
 #documents-body {
@@ -153,7 +179,7 @@ a:hover {
 }
 
 #software-body {
-    background-image: url("../img/software-background.png");
+    background-image: url("../img/general-background.jpeg");
     background-size: stretch;
 }
 
@@ -162,35 +188,45 @@ a:hover {
     background-size: stretch;
 }
 
-#header-pic {
+#side-Rectangle{
+  background-color: #F9C28C;
+  position: absolute;
+  top: 42px;
+  left: 152px;
+  width: 82px;
+  height: 234px;
+  border-radius: 10px;
+  z-index: -1;
+}
+/* #header-pic {
     background-image: url("../img/header-pic.png");
     background-size: cover;
     background-color: #859aa0;
     height: 200px;
-}
+} */
 
 body {
     background-size: cover;
 }
 
 .content-wrapper {
-    background-color: #cccccc;
+    background-color: #FFD8AF;
     padding: 2%;
     opacity: 0.94;
     min-height: 400px;
 }
 
-#nav-wrapper {
+/* #nav-wrapper {
     background-color: #282828;
-}
+} */
 
 .fa.fa-bars {
     display: none;
 }
 
-.black-bg {
-    background-color: black;
-}
+/* .black-bg {
+    background-color: #F9C28C;
+} */
 
 table {
     width: 100%;
