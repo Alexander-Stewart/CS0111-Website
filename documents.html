@@ -2,23 +2,25 @@
     <!-- Meta info -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta content="Computing Foundations: Data, Fall 2018" name="description">
+    <meta content="Computing Foundations: Data, Fall 2019" name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>CSCI 0111 | Documents</title>
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/documents.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie%7CEB+Garamond%7CMarkazi+Text%7CRoboto:400,900%7CKarla:400,700%7COpen+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
-<body id="documents-body">
+<body>
     <!-- Header -->
     <div id="header-wrapper"><div id="header" class="header">
     <!-- Mobile navigation bar -->
-    <div id="header-pic"></div>
+    <!-- <div id="header-pic"></div> -->
     <div id="nav-wrapper">
-        <div id="sidebar" class="opened black-bg">
+        <h3>CS 0111</h3>
+        <div id="sidebar">
             <div id="index-nav"><a href="/courses/csci0111/index.html" class="nav-button">Home</a></div>
             <div id="Lectures-nav"><a href="/courses/csci0111/lectures.html" class="nav-button">Lectures</a></div>
             <div id="assignments-nav"><a href="/courses/csci0111/assignments.html" class="nav-button">Assignments</a></div>
@@ -30,54 +32,64 @@
             <div id="Staff-nav"><a href="/courses/csci0111/staff.html" class="nav-button">Staff</a></div>
             <div id="Piazza-nav"><a href="http://piazza.com/brown/fall2018/fall2018csci0111s01/home" class="nav-button">Piazza</a></div>
         </div>
+        <div class="menu-button">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </div>
 </div></div><!--Content-->
-    <div class="content-wrapper">
-        <h1>Documents</h1>
-        <h2>Course Documentation</h2>
-        <ul id="course-document-li">
-            <li><a href="docs/missive.html">Course Missive</a></li>
-            <li><a href="docs/pyret-clarity-design-testing.html">Code Clarity, Design, and Testing Guide</a></li>
-            <!--<li><a>Collaboration Policy</a></li>-->
-        </ul>
-        <h2>Department</h2>
-        <ul id="department-document-li">
-	  <!--
-            <li>
-                <a href="https://docs.google.com/document/d/1qvFONmIaqIfoZAmQ18JqKeHHI_0g4vJS6dSaVyShrOE/edit" target="_blank">Master Brown CS Department Resource Handout</a>
-		</li>
-		-->
-            <li><a href="http://cs.brown.edu/courses/ta/pubs/ugrad_missive.pdf">Undergraduate Missive</a></li>
-            <li><a href="http://cs.brown.edu/about/diversity/resources/" target="_blank">Diversity and Inclusion</a></li>
-            <li><a href="https://cs.brown.edu/about/diversity/student-advocates-diversity-and-inclusion/">Student Advocates for Diversity and Inclusion</a></li>
-            <li><a href="https://cs.brown.edu/people/orgs/wics/">Women in Computer Science</a></li>
-            <li>
-                <a href="https://mosaic-plus.tumblr.com/">MOSAIC+</a>
-            </li>
-	    <!--
-            <li>
-                <a href="http://www.cs.brown.edu/orgs/artemis/">Artemis</a>
-		</li>
-		-->
-        </ul>
-        <h2>Health and Wellness</h2>
-        <p>If you need accommodation for your physical and mental health, please feel free to reach out to Professor Fisler - we want to support you as much as we can in the most comfortable way for you. Please check out the following links for resources
-            on physical and mental health in Computer Science.</p>
-        <ul id="wellness-document-li">
-            <li><a href="https://cs.brown.edu/about/system/ergo/pool/" target="_blank">Ergonomic Equipment Rental</a></li>
-            <li>
-                <a href="https://cs.brown.edu/media/filer_public/03/0a/030a6a2e-7a61-4c30-98c1-dce87b9d9899/brown_cs_health_and_wellness_resources.pdf" target="_blank">Brown CS Health and Wellness Resources</a>
-            </li>
-            <li><a href="https://www.facebook.com/groups/browncs/permalink/935633853216375/" target="_blank">Struggling in CS at Brown - Facebook post</a></li>
-        </ul>
-    </div>
+    <div id="content-wrapper">
+    <div class="content">
+        <div id="documents-content">
+            <div id="documents-wrapper">
+                <div id="documents-top-content">
+                    <h1>Documents</h1>
+                    <h2>Course Documentation</h2>
+                    <ul id="course-document-li">
+                        <li><a href="docs/missive.html">Course Missive</a></li>
+                        <li><a href="docs/pyret-clarity-design-testing.html">Code Clarity, Design, and Testing Guide</a></li>
+                    </ul>
+                    <h2>Department</h2>
+                    <ul id="department-document-li">
+                        <li><a href="http://cs.brown.edu/courses/ta/pubs/ugrad_missive.pdf">Undergraduate Missive</a></li>
+                        <li><a href="http://cs.brown.edu/about/diversity/resources/" target="_blank">Diversity and Inclusion</a></li>
+                        <li><a href="https://cs.brown.edu/about/diversity/student-advocates-diversity-and-inclusion/">Student Advocates for Diversity and Inclusion</a></li>
+                        <li><a href="https://cs.brown.edu/people/orgs/wics/">Women in Computer Science</a></li>
+                        <li>
+                            <a href="https://mosaic-plus.tumblr.com/">MOSAIC+</a>
+                        </li>
+                    </ul>
+                </div>
 
+                <img src="./assets/img/documents-image.png" id="documents-image"/>
+            
+            </div>
+            <h2>Health and Wellness</h2>
+            <p>If you need accommodation for your physical and mental health, please feel free to reach out to Professor Fisler - we want to support you as much as we can in the most comfortable way for you. Please check out the following links for resources
+                on physical and mental health in Computer Science.</p>
+            <ul id="wellness-document-li">
+                <li><a href="https://cs.brown.edu/about/system/ergo/pool/" target="_blank">Ergonomic Equipment Rental</a></li>
+                <li>
+                    <a href="https://cs.brown.edu/media/filer_public/03/0a/030a6a2e-7a61-4c30-98c1-dce87b9d9899/brown_cs_health_and_wellness_resources.pdf" target="_blank">Brown CS Health and Wellness Resources</a>
+                </li>
+                <li><a href="https://www.facebook.com/groups/browncs/permalink/935633853216375/" target="_blank">Struggling in CS at Brown - Facebook post</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="content-tab-bottom"></div>
+    </div>
     <!--Footer-->
-    <div id="footer-wrapper"><div id="footer">
-    <p>2018 CSCI 0111 Staff | Brown University Computer Science Department</p>
-</div></div><!-- Scripts -->
+    <div id="footer-wrapper">
+        <div id="footer">
+            <p>2019 CSCI 0111 Staff | Brown University Computer Science Department</p>
+        </div>
+    </div>
+    <!-- Scripts -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/reuseable.js"></script>
+    <script type="text/javascript" src="assets/js/staff_member.js"></script>
 </body>
 
