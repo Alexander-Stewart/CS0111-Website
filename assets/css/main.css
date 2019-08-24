@@ -353,8 +353,7 @@ p {
 .staff-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-self: auto;
+  justify-content: center;
   text-align: center;
 }
 
