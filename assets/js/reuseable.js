@@ -50,12 +50,35 @@ const sidebarSlide = () => {
 
     // Reset upon resize
     window.addEventListener("resize", function(){
-        console.log(window.innerWidth);
+        // console.log(window.innerWidth);
         if (window.innerWidth > 785) {
-            console.log("Resetting navbar...");
+            // console.log("Resetting navbar...");
             sidebar.removeAttribute("style");
         }
     });
 }
 
+const moveFolderTab = () => {
+    const tabHome = document.querySelector('#content-tab-bottom-home');
+    const tab = document.querySelector('#content-tab-bottom');
+    const contentWrapper = document.querySelector('#content-wrapper');
+
+    if(tabHome) {
+        tabHome.style.height = $('#content-wrapper').height();
+    }
+    if(tab) {
+        tab.style.height = $('#content-wrapper').height();
+    }
+
+    window.addEventListener("resize", function(){
+        if(tabHome) {
+            tabHome.style.height = $('#content-wrapper').height();
+        }
+        if(tab) {
+            tab.style.height = $('#content-wrapper').height();
+        }
+    });
+}
+
 sidebarSlide();
+moveFolderTab();

@@ -6,6 +6,13 @@ body {
     background-image: url("../img/wood_background.jpg");
 }
 
+table {
+        width: 100%;
+         -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+        display: block;
+    }
+
 a.nav-button {
     background-color: #F9C28C !important;
     border-bottom: none !important;
@@ -106,6 +113,30 @@ a:hover {
     margin: 10px;
 }
 
+#documents-content {
+    background-color: #FEFBEA;
+    border: 20px solid #FFD8AF;
+    min-height: 100%;
+    width: 100%;
+    padding: 0px 24px 24px 24px;
+}
+
+#documents-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-height: 50%;
+}
+
+#documents-image {
+    width: 50%;
+    height: inherit;
+}
+
+#documents-top-content {
+    display: inline-block;
+    flex: 1;
+}
+
 @media (max-width: 785px) {
     body {
         overflow-x: hidden;
@@ -139,12 +170,10 @@ a:hover {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
+    table {
+        width: 100%;
+         -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
         display: block;
     }
     thead tr {
@@ -379,31 +408,41 @@ p {
 
 #content-tab-bottom-home {
     content: "";
-    height: 85vh;
+    min-height: 100vh;
     width: 100px;
     display: block;
     position: absolute;
-    transform: translate(-25px) scaleY(-1);
+    transform: translate(-25px);
     background-color: #F9C28C;
     border-radius: 5px;
     border-bottom-left-radius: 25px;
-    transform-origin: top;
+    border-top-left-radius: 25px;
     z-index: -2;
     box-shadow: inset -70px 0 70px -20px #AD8761;
 }
 
 #content-tab-bottom {
     content: "";
-    height: 85vh;
+    min-height: 100vh;
     width: 100px;
     display: block;
     position: absolute;
-    transform: translate(-25px) scaleY(-1);
+    transform: translate(-25px);
     background-color: #F9C28C;
     border-radius: 5px;
     border-bottom-left-radius: 25px;
-    transform-origin: top;
+    border-top-left-radius: 25px;
     z-index: -2;
+}
+
+#postit-note {
+    width: 180px;
+    min-height: 150px;
+    text-align: center;
+    position: absolute;
+    background-color: #fdf100;
+    left: 65%;
+    box-shadow: 0px 21px 41px -26px rgba(0,0,0,0.75);
 }
 
 a:visited, a:active, a:focus {
